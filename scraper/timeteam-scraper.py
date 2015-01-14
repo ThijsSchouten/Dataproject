@@ -19,6 +19,7 @@ from pattern.web import Element, URL, DOM, abs, plaintext
 # --------------------------------------------------------------------------
 # Constant
 
+JSON_NAME = "NSRF 2014"
 REGATTA_URL = 'http://regatta.time-team.nl/nsrf/2014/results/matrix.php'
 
 
@@ -26,6 +27,12 @@ REGATTA_URL = 'http://regatta.time-team.nl/nsrf/2014/results/matrix.php'
 # Scraping
 
 def scrape_heat_urls(regatta_url, regatta_dom):
+    '''
+    Scrape all the URLs from base regatta page
+    @param regatta_url = url to the overview page of the regatta
+    @regatta_dom = dom variable containing the page with the heat urls
+    return type : heat_urls --> all the heat urls in list
+    '''
     
     # create list to store heat urls
     heat_urls = []
@@ -39,18 +46,22 @@ def scrape_heat_urls(regatta_url, regatta_dom):
     return heat_urls
 
 def scrape_names_page(name_url):
+    '''
+    Return the names found on the name_url url
+    @ param name_url = link to page containing crew names
+    return type : list of names in the boat
+    '''
 
-    #print name_url
-
-    #var to store names
-    names = []
-
-    #create dom format from URL
+    # create dom format from URL
     url = URL(name_url)
     dom = DOM(url.download(cached=True))
 
-    # 
+    names = []
+
+    # For every row in the dom (skipping first): if the first cell
+    # contains "slag", append the name and break loop. Else, just append. 
     for tr in dom('tr')[1:]:
+
         if "slag" in tr[0].content:
             names.append(tr[1].content)
             break
@@ -65,90 +76,103 @@ def scrape_heat_page(heat_url):
     (pre-final/a-final/b-final etc), club, finishposition, lane, 500m time, 
     1000m time, 1500m time, 2000m time,
 
-    return type: [heat_title, participants_dict, heat_time]
-    @ heat title = the name of the field
-    @ participants_dict is a dict containing data about the participants
-    @ heat time = time the heat took place
-    @ heat type = ex. 'voorwedstrijd' or 'a-final'
+    return type: [all_heats_dict, heat_title]
+    X @ heat title = the name of the field
+
     '''
 
-    participants_dict = {}
-    heat_title = '' 
-    heat_type = ''
+    # Print statement to show program is running
+    print "Scraping heat.."
 
-    #save
+    # Set up all variables
+    all_heats_dict = {}
+    all_heats_in_field = []
+    heat_title = '' 
+
+    # Save the heat url dom
     url = URL(heat_url)
     dom = DOM(url.download(cached=True))
 
-    #for i in range(0,len(dom.by_tag('h2'))): # for every heat
+    # For every heat/final
+    for i in range(0,len(dom.by_tag('h2'))):
 
-    i = 0
+        # Create a heat dictionary
+        heat_dictionary = {}
 
-    for web_table in dom('.timeteam'):
+        # Run header_extract to extract title, type and time
+        header_data = header_extract(dom.by_tag('h2')[i].content)
 
-        # dictionary to store crews
-        crews_dict = {}
-        # list to store 
+        # Save title for later use:
+        heat_title = header_data[1]
 
-        #print i
-        #header = dom.by_tag('h2')[i]
-        #i = i + 1                      
+        # Save time and day plus final/heat data
+        heat_dictionary["Heat_day_time"] = header_data[0] 
+        heat_dictionary["Heattype"] = header_data[2]
 
-        #header_data = mapping(header.content)
+        # Go through every table with timeteam class
+        for web_table in dom('.timeteam')[i:i+1]:
 
-        #heat_time = header_data[0] # heat timestamp 
-        #heat_title = header_data[1] # heat title
-        #heat_type = header_data[2]
+            # List to store all crews in:
+            crew_dict_list = []
 
-        #print header_data
-            
-        regatta_participants = []
+            # Select every row in the timeteam class table, start at 1 take 2 steps
+            for row in web_table('tr')[1::2]:
 
-        for row in web_table('tr')[1::2]: # take each second row after 1
-    
-            try: 
-                if (row('td')[0].content[:-1]).isdigit() == True:
-                    print "OK"
-
-                    #create dictionary to store crew info 
-                    #add all variables to dict                               
-                    crew_dict = {}
-                    crew_dict["position"] = row('td')[0].content                                      
-                    crew_dict["crew_code"] = plaintext(row('td')[1]\
-                                            .content)
-                    crew_dict["lane"] = row('td')[3].content
-                    crew_dict["five_time"] = row('td')[4].content
-                    crew_dict["five_pos"] = row('td')[5].content
-                    crew_dict["ten_time"] = row('td')[6].content
-                    crew_dict["ten_pos"] = row('td')[7].content
-                    crew_dict["fifteen_time"] = row('td')[8].content
-                    crew_dict["fifteen_pos"] = row('td')[9].content
-                    crew_dict["twenty_time"] = row('td')[10].content
-                    crew_dict["twenty_pos"] = row('td')[11].content
+                try: 
+                    # Check if the first cell is a number, scrape in case it is
+                    if (row('td')[0].content[:-1]).isdigit() == True:
 
 
-                    dom = DOM(row('td')[2])
+                        #-- add variables to dict                               
+                        crew_dict = {}
+                        crew_dict["position"] = row('td')[0].content                                      
+                        crew_dict["crew_code"] = plaintext(row('td')[1]\
+                                                .content)
+                        crew_dict["lane"] = row('td')[3].content
+                        crew_dict["five_time"] = row('td')[4].content
+                        crew_dict["five_pos"] = row('td')[5].content
+                        crew_dict["ten_time"] = row('td')[6].content
+                        crew_dict["ten_pos"] = row('td')[7].content
+                        crew_dict["fifteen_time"] = row('td')[8].content
+                        crew_dict["fifteen_pos"] = row('td')[9].content
+                        crew_dict["twenty_time"] = row('td')[10].content
+                        crew_dict["twenty_pos"] = row('td')[11].content
+                        #--
+                        
 
-                    for a in dom('a'):
-                        names_url = abs(a.attributes.get('href',''), base=url.redirect or url.string)
+                        #-- get the names of the crew
+                        temp_dom = DOM(row('td')[2]) 
 
-                    crew_dict["Names"] = scrape_names_page(names_url)
+                        for a in temp_dom('a'):
+                            names_url = abs(a.attributes.get('href',''), base=url.redirect or url.string)
+                        #--
+
+                        crew_dict["Names"] = scrape_names_page(names_url)  
 
 
+                        crew_dict_list.append(crew_dict)
 
-                    regatta_participants.append(crew_dict)
+                # Print error if index is out of range
+                except IndexError:                             
+                    print 'IndexError'
 
-            except IndexError:
-                print row                              
-                print 'IndexError'
+        # Add the crew data to the heat dictionary
+        heat_dictionary["Participants"] = crew_dict_list
 
-        participants_dict = regatta_participants
+        # Append the heat dictionary to a list
+        all_heats_in_field.append(heat_dictionary)
+        
+    # Add list containing all heats to a dictionary["Heats"]
+    all_heats_dict["Heats"] = all_heats_in_field
 
-    print participants_dict
+    # Return the dictionary and the title
+    return [all_heats_dict, heat_title]
 
-    return [heat_title, participants_dict, heat_time, heat_type]
 
-def mapping(input_title):
+def header_extract(input_title):
+    '''
+    Extract the data from 
+    '''
     heatnames = ["Meisjes", "Jongens", "Corp", "LDDev",\
                  "DDev", "LDev", "LDSA", "LDSB", "LDEj", "HTal", "DTal", \
                  "LSA", "LSB", "DSA", "LDO", "LDN", "LDB", "J18", "J16", "M18",\
@@ -202,10 +226,11 @@ def mapping(input_title):
         print "Fault in title, input is:", input_title
         print "output title is:", title
 
-    #print input_title, ">> TIME:", time, "BOAT:", boat, "TITLE:", title,\
+    # Pretty printing for easy testing:
+    # print input_title, ">> TIME:", time, "BOAT:", boat, "TITLE:", title,\
     #       "HEAT:", heat
 
-    return [time, title+" "+boat, heattype]
+    return [time, title+" "+boat, heat]
 
 
 # --------------------------------------------------------------------------
@@ -215,9 +240,8 @@ def main():
     '''
     '''
 
-    # Create dict to store regatta data in
+    # Set up dictionaries
     regatta_dict = {}
-    # Create dict to store all heats in
     regatta_heats = {}
 
     # Create DOM from regatta URL
@@ -235,23 +259,18 @@ def main():
     heat_urls = scrape_heat_urls(url, dom) 
 
     # Save data for every heat
-    for heat in heat_urls[44:45]:
-        temp_heat_data = scrape_heat_page(heat)
+    # for heat in heat_urls[44:45]: --> DSA 8+ NSRF slot
+    for heat in heat_urls:
+        heat_data = scrape_heat_page(heat)
 
-        temp_participants_dict = {}
-        temp_participants_dict["Type"] = temp_heat_data[3]
-        temp_participants_dict["Heat_dt"] = temp_heat_data[2]
-        temp_participants_dict["Participants"] = temp_heat_data[1]
+        regatta_heats[heat_data[1]] = heat_data[0]
 
 
-        regatta_heats[temp_heat_data[0]] = temp_participants_dict
+    regatta_dict["Fields"] = regatta_heats
 
-
-
-    regatta_dict["heats"] = regatta_heats
-
-    with open('data.json', 'w') as outfile:
-        json.dump(regatta_dict, outfile, sort_keys=True, indent=4)
+    # Write dictionary to json file
+    with open(JSON_NAME +'.json', 'w') as outfile:
+        json.dump(regatta_dict, outfile, sort_keys=True, indent=2)
     
     print "... Done"
 
