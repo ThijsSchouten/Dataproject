@@ -20,8 +20,8 @@ from pattern.web import Element, URL, DOM, abs, plaintext
 # Constant
 
 JSON_NAME = "NSRF 2014"
+REGATTA_DATE = "05/07/2014"
 REGATTA_URL = 'http://regatta.time-team.nl/nsrf/2014/results/matrix.php'
-
 
 # --------------------------------------------------------------------------
 # Scraping
@@ -33,10 +33,10 @@ def scrape_heat_urls(regatta_url, regatta_dom):
     @regatta_dom = dom variable containing the page with the heat urls
     return type : heat_urls --> all the heat urls in list
     '''
-    
-    # create list to store heat urls
+
     heat_urls = []
 
+    # Save absolute links to heats
     for link in regatta_dom('a'):
         temp = abs(link.attributes.get('href',''), base=regatta_url.redirect
                 or regatta_url.string)
@@ -168,7 +168,6 @@ def scrape_heat_page(heat_url):
     # Return the dictionary and the title
     return [all_heats_dict, heat_title]
 
-
 def header_extract(input_title):
     '''
     Extract the data from 
@@ -230,8 +229,7 @@ def header_extract(input_title):
     # print input_title, ">> TIME:", time, "BOAT:", boat, "TITLE:", title,\
     #       "HEAT:", heat
 
-    return [time, title+" "+boat, heat]
-
+    return [time, title+boat, heat]
 
 # --------------------------------------------------------------------------
 # Main 
@@ -252,25 +250,25 @@ def main():
     for title in dom.by_tag('title'):
         regatta_title = plaintext(title.content)[:-12]
 
-    regatta_dict["id"] = regatta_title
-    regatta_dict["date"] = "05/07/2014"
+    regatta_dict["name"] = regatta_title
+    regatta_dict["date"] = REGATTA_DATE
 
     # Fetch heat urls
     heat_urls = scrape_heat_urls(url, dom) 
 
     # Save data for every heat
     # for heat in heat_urls[44:45]: --> DSA 8+ NSRF slot
-    for heat in heat_urls:
+    for heat in heat_urls[44:45]:
         heat_data = scrape_heat_page(heat)
 
         regatta_heats[heat_data[1]] = heat_data[0]
 
 
-    regatta_dict["Fields"] = regatta_heats
+    regatta_dict["fields"] = regatta_heats
 
     # Write dictionary to json file
     with open(JSON_NAME +'.json', 'w') as outfile:
-        json.dump(regatta_dict, outfile, sort_keys=True, indent=2)
+        json.dump(regatta_dict, outfile, sort_keys=True, indent=4)
     
     print "... Done"
 
