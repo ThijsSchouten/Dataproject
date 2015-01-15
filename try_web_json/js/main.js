@@ -2,39 +2,14 @@
 
 window.onload = function() {
 
-    // 
-    function parse_json(json_id) {
-        var selected = document.getElementById(json_id).value
-        var parsed = JSON.parse(selected)
-        console.log("----------  JSON data parsed")
-        return parsed
-    }
-     
-    var regatta = parse_json("method_one")
-
-    //var 
-
-
-    console.log(regatta.fields.HTal_acht.heats)
-    //console.log("json.name >>>>", regatta.name)
-    //console.log("json.date >>>>", regatta.date)
-    //console.log("json.fields >>>>", regatta.fields)
-    //console.log("json.fields.heatname >>>>", regatta.fields.B1x)
-    //console.log("json.fields.heatname.heats >>>>", regatta.fields.'B1x'.heats)
-    //console.log("json.fields.heatname.heats[2] >>>>", regatta.fields.'B1x'.heats[2])
-    //console.log("json.fields.heatname.heats[2].participants >>>>", regatta.fields.'B1x'.heats[2].participants)
-
-    // get all teams and times in final of LO4-
-
-    // console.log(regatta.fields."LO4-")]
-
-    function make_heat_graph(dataset, legend, element) {
+    function make_heat_graph(json_file_loc, element, veld) {
 
         // Set up size of the graph (c) mbostock
         var margin = {top: 20, right: 35, bottom: 30, left: 45},
-            width = 640 - margin.left - margin.right,
-            height = 350 - margin.top - margin.bottom;
-        var barpadding = 1;
+            width = 600 - margin.left - margin.right,
+            height = 300 - margin.top - margin.bottom;
+
+        // var format_time = d3.time.format("%M:%S,%L").parse;
 
         var x = d3.scale.ordinal()
             .rangeRoundBands([0, width], .1);
@@ -49,43 +24,83 @@ window.onload = function() {
         var yAxis = d3.svg.axis()
             .scale(y)
             .orient("left")
-            .ticks(10, "%");
+            .ticks(10, "M")
 
         // Select the element to place svg in, add svg to it
         var svg = d3.select(element)
                     .append("svg")
-                    .attr("width", width)
-                    .attr("height", height)
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                    .append("g")
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        svg.selectAll("rect")
-            .data(dataset)
+        d3.json(json_file_loc, function(error, json) {
+            if (error) return console.warn("error loading json");
+            
+            var heat_crews = [],
+                crew_times = [],
+                lanes = [];
+
+            for (var crew in json.fields.B_acht.heats[2].participants) {
+                heat_crews.push(json.fields.B_acht.heats[2].participants[crew].crew_code)
+                crew_times.push(json.fields.B_acht.heats[2].participants[crew].twenty_time)
+                lanes.push(json.fields.B_acht.heats[2].participants[crew].lane)
+            }
+
+            console.log(heat_crews)
+            console.log(crew_times)
+            console.log(lanes)
+
+            // 
+            x.domain(heat_crews.map(function(d, i) {return heat_crews[i]}));
+            y.domain([d3.min(crew_times)-5, d3.max(crew_times)+5])
+            //y.domain([0, d3.max(crew_times)]);
+
+            // x axis text
+            svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis)
+              .append("text")
+                .attr("x", width)
+                .attr("dy", "-0.71em")
+                .style("text-anchor", "end")
+                .text("CREW");
+
+            // y axis text
+            svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis)
+              .append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 10)
+                .attr("dy", ".71em")
+                .style("text-anchor", "end")
+                .text("FINISH TIME");
+
+            // title text
+            svg.append("text")
+                .attr("class", "g_title")
+                .attr("x", (width / 2))             
+                .attr("y", 0 - (margin.top / 3))
+                .attr("text-anchor", "middle")
+                .text(veld)
+
+            // the data..
+            svg.selectAll(".bar")
+                .data(heat_crews)
                 .enter().append("rect")
-                    .attr("x", function(d,i) {
-                        return i*(width / dataset.length);
-                    })
-                    .attr("y", function(d) {
-                        return height - d;
-                    })
-                    .attr("width", function(d,i) {
-                        return width / dataset.length - barpadding
-                    })
-                    .attr("height", function(d,i) {
-                        return d
-                    })
-                    .attr("fill", "steelblue")
+                .attr("class", "bar")
+                .attr("x", function(d,i) {return x(d.letter); })
+                .attr("width", x.rangeBand())
+                .attr("y", function(d) {return y(d.frequency); })
+                .attr("height", function(d) {return height - y(d.frequency); })
 
-     }
+        });
 
-     var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-                11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
-     make_heat_graph(dataset, "ok", "#heat_stat")
+    }
 
+    make_heat_graph("json/NSRF 2014.json", "#heat_stat", "B_skiff")
 
 }
 
-
-/*
-     json.name [regatta name]
-     json.date [regatta date]
-     json.fields [list of fields]
-*/

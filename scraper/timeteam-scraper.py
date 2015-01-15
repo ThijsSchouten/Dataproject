@@ -130,13 +130,13 @@ def scrape_heat_page(heat_url):
                         crew_dict["crew_code"] = plaintext(row('td')[1]\
                                                 .content)
                         crew_dict["lane"] = row('td')[3].content
-                        crew_dict["five_time"] = row('td')[4].content
+                        crew_dict["five_time"] = time_mapping(row('td')[4].content)
                         crew_dict["five_pos"] = row('td')[5].content
-                        crew_dict["ten_time"] = row('td')[6].content
+                        crew_dict["ten_time"] = time_mapping(row('td')[6].content)
                         crew_dict["ten_pos"] = row('td')[7].content
-                        crew_dict["fifteen_time"] = row('td')[8].content
+                        crew_dict["fifteen_time"] = time_mapping(row('td')[8].content)
                         crew_dict["fifteen_pos"] = row('td')[9].content
-                        crew_dict["twenty_time"] = row('td')[10].content
+                        crew_dict["twenty_time"] = time_mapping(row('td')[10].content)
                         crew_dict["twenty_pos"] = row('td')[11].content
                         #--
                         
@@ -191,9 +191,10 @@ def header_extract(input_title):
 
     time = input_title[0:9] # will find Sat 10:40 as well as Za 10:40
                             # strip trailing whitespace?
-    title = 'x'
-    boat = 'x'
-    heat = 'x' 
+
+    title = 'no_data'
+    boat = 'no_data'
+    heat = 'no_data' 
 
     for heatname in heatnames:
         if heatname in input_title:
@@ -217,16 +218,16 @@ def header_extract(input_title):
             break
 
     # If heattype is not specified, assume it is a final
-    if heat is 'x':
+    if heat is 'no_data':
         heat = "Final"
 
     # Check boat values:
-    if boat is 'x':
+    if boat is 'no_data':
         print "Fault in boattype, input is:", input_title
         print "output boattype is:", boat
 
     # Check title values:
-    if title is 'x':
+    if title is 'no_data':
         print "Fault in title, input is:", input_title
         print "output title is:", title
 
@@ -235,6 +236,21 @@ def header_extract(input_title):
     #       "HEAT:", heat
 
     return [time, title+"_"+boat, heat]
+
+def time_mapping(string):
+    # format the string to return an integer in seconds + milliseconds 
+    # fe "07:43,48" becomes 463,48
+
+    formatted = "no_data"
+
+    try:
+        formatted = (float(string[0:2]) * 60 +\
+                 float(string[-5:-3]) +\
+                 float("."+string[-2:])),
+    except ValueError:
+        print "ValueError"
+
+    return formatted
 
 # --------------------------------------------------------------------------
 # Main 
