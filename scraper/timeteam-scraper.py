@@ -101,13 +101,14 @@ def scrape_heat_page(heat_url):
 
         # Run header_extract to extract title, type and time
         header_data = header_extract(dom.by_tag('h2')[i].content)
+        print header_data
 
         # Save title for later use:
         heat_title = header_data[1]
 
         # Save time and day plus final/heat data
-        heat_dictionary["Heat_day_time"] = header_data[0] 
-        heat_dictionary["Heattype"] = header_data[2]
+        heat_dictionary["heat_day_time"] = header_data[0] 
+        heat_dictionary["heattype"] = header_data[2]
 
         # Go through every table with timeteam class
         for web_table in dom('.timeteam')[i:i+1]:
@@ -147,7 +148,7 @@ def scrape_heat_page(heat_url):
                             names_url = abs(a.attributes.get('href',''), base=url.redirect or url.string)
                         #--
 
-                        crew_dict["Names"] = scrape_names_page(names_url)  
+                        crew_dict["names"] = scrape_names_page(names_url)  
 
 
                         crew_dict_list.append(crew_dict)
@@ -157,13 +158,13 @@ def scrape_heat_page(heat_url):
                     print 'IndexError'
 
         # Add the crew data to the heat dictionary
-        heat_dictionary["Participants"] = crew_dict_list
+        heat_dictionary["participants"] = crew_dict_list
 
         # Append the heat dictionary to a list
         all_heats_in_field.append(heat_dictionary)
         
     # Add list containing all heats to a dictionary["Heats"]
-    all_heats_dict["Heats"] = all_heats_in_field
+    all_heats_dict["heats"] = all_heats_in_field
 
     # Return the dictionary and the title
     return [all_heats_dict, heat_title]
@@ -179,7 +180,10 @@ def header_extract(input_title):
                  "LB", "LN", "DN", "DB", "DO", "LO", "Ej", "SA", "SB",\
                  "O", "N", "B"]  
 
-    boattypes = ["8+", "4+", "4-", "4*", "4x", "2x", "2-", "2+", "1x", "acht"]
+    boattypes = ["8+", "4+", "4-", "4*", "4x", "2x", "2*", "2-", "2+", "1x", "1*", "acht"]
+    boattype_conversion_names = ["acht", "viermet", "vierzonder", "dubbelvier",\
+                                "dubbelvier", "dubbeltwee", "dubbeltwee", \
+                                "tweezonder", "tweemet", "skiff", "skiff", "acht"]
 
     heattypes_F = ["A-finale", "B-finale", "C-finale", "D-finale", "E-finale"]
 
@@ -208,7 +212,8 @@ def header_extract(input_title):
 
     for boattype in boattypes:
         if boattype in input_title:
-            boat = boattype 
+            index = boattypes.index(boattype)
+            boat = boattype_conversion_names[index]
             break
 
     # If heattype is not specified, assume it is a final
@@ -229,7 +234,7 @@ def header_extract(input_title):
     # print input_title, ">> TIME:", time, "BOAT:", boat, "TITLE:", title,\
     #       "HEAT:", heat
 
-    return [time, title+boat, heat]
+    return [time, title+"_"+boat, heat]
 
 # --------------------------------------------------------------------------
 # Main 
@@ -258,7 +263,7 @@ def main():
 
     # Save data for every heat
     # for heat in heat_urls[44:45]: --> DSA 8+ NSRF slot
-    for heat in heat_urls[44:45]:
+    for heat in heat_urls[:]:
         heat_data = scrape_heat_page(heat)
 
         regatta_heats[heat_data[1]] = heat_data[0]
@@ -268,7 +273,7 @@ def main():
 
     # Write dictionary to json file
     with open(JSON_NAME +'.json', 'w') as outfile:
-        json.dump(regatta_dict, outfile, sort_keys=True, indent=4)
+        json.dump(regatta_dict, outfile, sort_keys=True)
     
     print "... Done"
 
