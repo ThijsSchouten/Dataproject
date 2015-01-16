@@ -2,11 +2,11 @@
 
 window.onload = function() {
 
-    function make_heat_graph(json_file_loc, element, veld) {
+    function make_heat_graph(json_file_loc, element, veld, iter) {
 
         // Set up size of the graph (c) mbostock
         var margin = {top: 20, right: 35, bottom: 30, left: 45},
-            width = 600 - margin.left - margin.right,
+            width = 200 - margin.left - margin.right,
             height = 300 - margin.top - margin.bottom;
 
         // var format_time = d3.time.format("%M:%S,%L").parse;
@@ -37,24 +37,20 @@ window.onload = function() {
         d3.json(json_file_loc, function(error, json) {
             if (error) return console.warn("error loading json");
             
-            var heat_crews = [],
-                crew_times = [],
-                lanes = [];
+            var dataset = []
 
-            for (var crew in json.fields.B_acht.heats[2].participants) {
-                heat_crews.push(json.fields.B_acht.heats[2].participants[crew].crew_code)
-                crew_times.push(json.fields.B_acht.heats[2].participants[crew].twenty_time)
-                lanes.push(json.fields.B_acht.heats[2].participants[crew].lane)
-            }
-
-            console.log(heat_crews)
-            console.log(crew_times)
-            console.log(lanes)
+            for (var crew in json.fields.B_acht.heats[iter].participants) {
+                var crew_code = (json.fields.B_acht.heats[iter].participants[crew].crew_code)
+                var crew_time = (json.fields.B_acht.heats[iter].participants[crew].twenty_time)
+                var crew_lane = (json.fields.B_acht.heats[iter].participants[crew].lane)
+                dataset.push({crew: crew_code, times: crew_time, lane: crew_lane})
+            }   
 
             // 
-            x.domain(heat_crews.map(function(d, i) {return heat_crews[i]}));
-            y.domain([d3.min(crew_times)-5, d3.max(crew_times)+5])
-            //y.domain([0, d3.max(crew_times)]);
+            x.domain(dataset.map(function(d,i) {return dataset[i].crew} ));
+            y.domain([350, 400])
+            /*y.domain([d3.min(dataset, function(d,i) { return dataset[i].times}) - 15,
+                      d3.max(dataset, function(d,i) { return dataset[i].times}) + 15])*/
 
             // x axis text
             svg.append("g")
@@ -65,7 +61,7 @@ window.onload = function() {
                 .attr("x", width)
                 .attr("dy", "-0.71em")
                 .style("text-anchor", "end")
-                .text("CREW");
+                //.text("CREW"); 
 
             // y axis text
             svg.append("g")
@@ -86,21 +82,28 @@ window.onload = function() {
                 .attr("text-anchor", "middle")
                 .text(veld)
 
-            // the data..
             svg.selectAll(".bar")
-                .data(heat_crews)
-                .enter().append("rect")
+                .data(dataset)
+              .enter().append("rect")
                 .attr("class", "bar")
-                .attr("x", function(d,i) {return x(d.letter); })
-                .attr("width", x.rangeBand())
-                .attr("y", function(d) {return y(d.frequency); })
-                .attr("height", function(d) {return height - y(d.frequency); })
-
+                .attr("x", function(d,i) {return x(dataset[i].crew); })
+                .attr("width", (x.rangeBand()))
+                .attr("y", function(d,i) {return y(dataset[i].times); })
+                .attr("height", function(d,i) {return height - y(dataset[i].times); }) 
+                
         });
 
     }
 
-    make_heat_graph("json/NSRF 2014.json", "#heat_stat", "B_skiff")
+    make_heat_graph("json/NSRF 2014.json", "#heat_stat", "B8+ A-Finale", 2)
+    make_heat_graph("json/NSRF 2014.json", "#heat_stat", "B8+ Heat 2", 1)
+    make_heat_graph("json/NSRF 2014.json", "#heat_stat", "B8+ Heat 1", 0)
 
 }
 
+/*
+                .attr("x", function(d,i) {return x(d.letter); })
+                .attr("width", x.rangeBand())
+                .attr("y", function(d) {return y(d.frequency); })
+                .attr("height", function(d) {return height - y(d.frequency); })
+*/
