@@ -2,8 +2,12 @@
   fill: #addd8e;
 }
 
+.dot {
+  fill: black;
+}
+
 .bar:hover {
-  fill: brown;
+  fill: #FF4719;
 }
 
 .axis {
