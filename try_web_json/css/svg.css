@@ -3,8 +3,13 @@
 }
 
 .dot {
-  fill: black;
+  fill: #addd8e;
 }
+
+.dot:hover {
+  fill: #FF4719;
+}
+
 
 .bar:hover {
   fill: #FF4719;

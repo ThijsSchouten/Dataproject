@@ -1,84 +1,102 @@
 html {
-   /*background-image: url("../img/pinstripe.png");*/
-   background-repeat: repeat;
-   background-position: center;
+  /*background-image: url("../img/pinstripe.png");*/
+  background-repeat: repeat;
+  background-position: center;
 }
 
 body {
-   background-color: white;
-   position: relative;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 20px;
-   width: 750px;
-   font: 16px sans-serif;
-   text-align: left;
-   font-family: garamond, tahoma;
+  background-color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 750px;
+  font: 16px sans-serif;
+  text-align: left;
+  font-family: garamond, tahoma;
 }
 
 p {
-   font-family: arial;
-   font-size: 14px;
+  font-family: arial;
+  font-size: 13px;
 }
+
+
+/*d3noob.org*/
+div.tooltip { 
+  font-family: arial;  
+  font-size: 11px;
+  position: absolute;           
+  text-align: center;           
+  width: 60px;                  
+  height: 28px;                 
+  padding: 2px;             
+  color: white;   
+  background: black;   
+  border: 0px;      
+  border-radius: 2px;           
+  pointer-events: none;         
+}
+
 
 .container {
-   padding-left: 6px;
+  padding-left: 6px;
 }
 
+
 #header1 {
-   font-size: 50px;
-   font-color: gray;
-   font-style: oblique;
-   border-bottom-style: dotted;
-   border-bottom-width: 0.5px;
+  font-size: 50px;
+  font-color: gray;
+  font-style: oblique;
+  border-bottom-style: dotted;
+  border-bottom-width: 0.5px;
 }
 
 #sub_header {
-   font-family: times, arial;
-   height: 10px;
+  font-family: times, arial;
+  height: 10px;
 }
-
 #subsub_header {
-   font-size: 21px;
-   font-family: times, arial;
+  font-size: 21px;
+  font-family: times, arial;
 }
 
 #control_panel {
-   padding: 8px;
+  padding: 8px;
 }
 
 #explain {
-   padding: 8px;
-   border-style: dotted;
-   border-width: 0.2px;
-   border-color: #d1d1d1;
-   font-family: tahoma;
-   font-size: 12px;
-   text-align: left;
+  padding: 8px;
+  border-style: dotted;
+  border-width: 0.2px;
+  border-color: #d1d1d1;
+  font-family: tahoma;
+  font-size: 12px;
+  text-align: left;
 }
 
 #note {
-   padding: 10px;
-   padding-top: 5px;
-   font-size: 10px;
-   font-family: tahoma;
-   text-align: left;
+  padding: 10px;
+  padding-top: 5px;
+  font-size: 10px;
+  font-family: tahoma;
+  text-align: left;
 }
 
 #footer {
-   padding: 10px;
-   border-top-style: dotted;
-   border-top-width: 0.5px;
-   border-color: #d1d1d1;
-   font-size: 11px;
-   font-family: tahoma;
-   text-align: center;
+  padding: 10px;
+  border-top-style: dotted;
+  border-top-width: 0.5px;
+  border-color: #d1d1d1;
+  font-size: 11px;
+  font-family: tahoma;
+  text-align: center;
 }
 
 .JSON {
-   display: none;
+  display: none;
 }
 
 #slider {
-   width: auto;
+  width: auto;
 }
