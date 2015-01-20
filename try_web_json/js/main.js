@@ -243,7 +243,7 @@ window.onload = function() {
             width = 700 - margin.left - margin.right,
             height = 300 - margin.top - margin.bottom;
 
-        var dotwidth = 3
+        var dotwidth = 5
 
         // Ordinal scale on x-axis, linear on y-axis
         var x = d3.scale.ordinal()
@@ -319,7 +319,7 @@ window.onload = function() {
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
                 x.domain(dataset.map(function(d,i) {return dataset[i].final_id} ))
-                y.domain([0.65, 1]);
+                y.domain([0.8, 1]);
      
                 // x axis text
                 svg.append("g")
@@ -359,23 +359,24 @@ window.onload = function() {
                     .attr("cy", function(d,i) { return y(speed_percentage(dataset[i].finish_time,
                                                                           dataset[i].final_id)) } )
                     .attr("r", dotwidth)
-                    .on("mouseover", function(d) {      
+                    .on("mouseover", function(d,i) { 
+
+                        var id = dataset[i].final_id,
+                            code = dataset[i].code,
+                            names = dataset[i].names.join("<br>");
+
                         tooltip.transition()        
-                            .duration(200)      
-                            .style("opacity", .5);      
-                        tooltip.html(function(d,i) {return(dataset[i].crew_code)}
+                            .duration(250)      
+                            .style("opacity", .7);      
+                        tooltip.html("<strong>" + id + "&nbsp&nbsp|&nbsp&nbsp" +
+                                     code + "</strong><hr>" + names)
+                        .style("left", _x + "px")     
+                        .style("top", _y + "px"); 
 
-                            )
-
-
-
-
-                            .style("left", (d3.event.pageX) + "px")     
-                            .style("top", (d3.event.pageY - 28) + "px");    
                         })                  
                     .on("mouseout", function(d) {       
                         tooltip.transition()        
-                            .duration(500)      
+                            .duration(700)      
                             .style("opacity", 0);   
                     });
 
@@ -386,24 +387,25 @@ window.onload = function() {
     }
 
     function speed_percentage(time, field_id) {
-        // bosbaan records from http://www.knrb.nl/files/bestanden/Bosbaan_records_-_7_okt_2013.pdf
-            var best = 1 / QUICKEST_TIMES[field_id],
-                current = 1 / time,
-                percentage = (current / best)
+
+        var best = 1 / QUICKEST_TIMES[field_id],
+            current = 1 / time,
+            percentage = (current / best)
 
         if (isNaN(percentage) === true) {
-            console.log("error, no time of best_time found")
+            console.log("error, no time or no best_time found")
             return 0.5
         }
 
         return percentage
     }
 
+
     // Run this to find fastest times for every heat, save in QUICKEST_TIMES
-    // Running this every time the sites loads would make it very slow
+    // Running this every time the sites loads would make it very slow --> 
+    // Save the list, copy/paste from FF with the .toSource() function
 
     
-
     // get_quickest_times("json/NSRF_2014.json")
     //console.log(QUICKEST_TIMES["SA1x"])
 
@@ -436,13 +438,8 @@ window.onload = function() {
 
             console.log(records.toSource())
         
-            return records
+            // return records
         });
-
-        
-
-
-
     }
 
 }
