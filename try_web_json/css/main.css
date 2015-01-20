@@ -21,26 +21,9 @@ p {
   font-size: 13px;
 }
 
-
-/*d3noob.org*/
-div.tooltip { 
-  font-family: arial;  
-  font-size: 11px;
-  position: absolute;           
-  text-align: left; 
-  width: 110px;                          
-  padding: 2px;             
-  color: white;   
-  background: black;   
-  border: 0px;      
-  border-radius: 2px;           
-  pointer-events: none;         
-}
-
 .container {
   padding-left: 6px;
 }
-
 
 #header1 {
   font-size: 50px;

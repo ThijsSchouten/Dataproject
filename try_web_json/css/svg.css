@@ -1,9 +1,10 @@
 .bar {
-  fill: #addd8e;
+  fill: #343945;
 }
 
 .dot {
-  fill: #addd8e;
+  fill: #343945;
+  opacity: 0.9;
 }
 
 .dot:hover {

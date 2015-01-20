@@ -1,0 +1,5580 @@
+{
+  "date": "05/07/2014", 
+  "heat": [
+    {
+      "field": "J16_dubbelvier", 
+      "heat_day_time": "za 18:05 ", 
+      "heattype": "Heat", 
+      "id": "J164x", 
+      "participants": [
+        {
+          "crew_code": "LEY", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            297.74
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            98.19
+          ], 
+          "lane": 4, 
+          "names": [
+            "Thijs Vromen", 
+            "Gert Jan van Doorn", 
+            "Maarten Harten", 
+            "Leander Gall"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            196.36
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            398.19
+          ]
+        }, 
+        {
+          "crew_code": "SPA", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            308.12
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            97.9
+          ], 
+          "lane": 6, 
+          "names": [
+            "Philip Verloren van Themaat", 
+            "Daan van der Biezen", 
+            "Joris Moerman", 
+            "Jip Bult"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            202.92
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            411.0
+          ]
+        }, 
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            313.79
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            99.79
+          ], 
+          "lane": 5, 
+          "names": [
+            "Kjell Bottema", 
+            "Michiel Couwenbergh", 
+            "Puck Kenemans", 
+            "Daan van Kampen"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            205.84
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            414.39
+          ]
+        }, 
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            311.59
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            100.63
+          ], 
+          "lane": 7, 
+          "names": [
+            "Max Gompel", 
+            "Casper van Luyken", 
+            "Floris Gravendeel", 
+            "Thijs Kroeze"
+          ], 
+          "position": 4, 
+          "ten_pos": 3, 
+          "ten_time": [
+            205.11
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            419.75
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            334.74
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            108.91
+          ], 
+          "lane": 3, 
+          "names": [
+            "Lars Pals", 
+            "Stijn van Brummelen", 
+            "Mano Nijkerk", 
+            "Jasper Herzstein"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            221.63
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            448.2
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "J16_acht", 
+      "heat_day_time": "zo 18:44 ", 
+      "heattype": "Heat", 
+      "id": "J168+", 
+      "participants": [
+        {
+          "crew_code": "SPA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            289.72
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            93.37
+          ], 
+          "lane": 5, 
+          "names": [
+            "Daan van der Biezen", 
+            "Philip Verloren van Themaat", 
+            "Gijs Schwarz", 
+            "Joris Moerman", 
+            "Jip Bult", 
+            "Fabian Driessen", 
+            "Bjense Loman", 
+            "Daan Insinger"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            191.15
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            387.05
+          ]
+        }, 
+        {
+          "crew_code": "HEM", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            308.15
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            100.27
+          ], 
+          "lane": 4, 
+          "names": [
+            "Pelle Domela Nieuwenhuis", 
+            "Joep K&uuml;ppers", 
+            "Elliot Mulot", 
+            "Dimitri van Wijngaarden", 
+            "Wouter Wisbrun", 
+            "Jan Douwe de Boer", 
+            "Marnix van Hunnik", 
+            "Ben van Brussel"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            205.5
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            409.33
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_skiff", 
+      "heat_day_time": "za 12:44 ", 
+      "heattype": "Heat", 
+      "id": "M181x", 
+      "participants": [
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            369.39
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            117.18
+          ], 
+          "lane": 3, 
+          "names": [
+            "Martine van den Boomgaard"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            242.83
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            496.36
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            376.65
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            123.29
+          ], 
+          "lane": 4, 
+          "names": [
+            "Floor van Lieshout"
+          ], 
+          "position": 2, 
+          "ten_pos": 3, 
+          "ten_time": [
+            250.51
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            503.77
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            379.62
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            119.8
+          ], 
+          "lane": 6, 
+          "names": [
+            "Lilian Magermans"
+          ], 
+          "position": 3, 
+          "ten_pos": 2, 
+          "ten_time": [
+            249.45
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            510.99
+          ]
+        }, 
+        {
+          "crew_code": "NEP", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            387.41
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            125.47
+          ], 
+          "lane": 5, 
+          "names": [
+            "Anne-Men Huyzer"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            257.16
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            518.2
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_skiff", 
+      "heat_day_time": "za 12:48 ", 
+      "heattype": "Heat", 
+      "id": "M181x", 
+      "participants": [
+        {
+          "crew_code": "BEA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            385.07
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            121.15
+          ], 
+          "lane": 5, 
+          "names": [
+            "Lieke van Bodegom"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            251.95
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            515.29
+          ]
+        }, 
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            387.12
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            123.76
+          ], 
+          "lane": 7, 
+          "names": [
+            "Annabel Oggel"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            253.89
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            520.86
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            396.54
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            130.82
+          ], 
+          "lane": 3, 
+          "names": [
+            "Marjolein van Lierop"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            265.52
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            529.93
+          ]
+        }, 
+        {
+          "crew_code": "HUN", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            398.02
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            127.2
+          ], 
+          "lane": 4, 
+          "names": [
+            "Gaya ten Kate"
+          ], 
+          "position": 4, 
+          "ten_pos": 3, 
+          "ten_time": [
+            261.91
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            537.16
+          ]
+        }, 
+        {
+          "crew_code": "RIC", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            424.17
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            132.99
+          ], 
+          "lane": 6, 
+          "names": [
+            "Babette Huigsloot"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            276.11
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            566.46
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_skiff", 
+      "heat_day_time": "za 12:52 ", 
+      "heattype": "Heat", 
+      "id": "M181x", 
+      "participants": [
+        {
+          "crew_code": "HUN", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            388.81
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            123.81
+          ], 
+          "lane": 6, 
+          "names": [
+            "Marjolein Scholtens"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            255.69
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            521.61
+          ]
+        }, 
+        {
+          "crew_code": "GOU", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            394.21
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            127.19
+          ], 
+          "lane": 4, 
+          "names": [
+            "Pleun de Brouwer"
+          ], 
+          "position": 2, 
+          "ten_pos": 3, 
+          "ten_time": [
+            261.72
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            525.51
+          ]
+        }, 
+        {
+          "crew_code": "HEM", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            396.18
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            126.05
+          ], 
+          "lane": 3, 
+          "names": [
+            "Annika Does"
+          ], 
+          "position": 3, 
+          "ten_pos": 2, 
+          "ten_time": [
+            260.69
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            529.82
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            405.4
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            130.85
+          ], 
+          "lane": 5, 
+          "names": [
+            "Anna Lisa Labaar"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            269.63
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            540.01
+          ]
+        }, 
+        {
+          "crew_code": "BRE", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            422.22
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            133.61
+          ], 
+          "lane": 7, 
+          "names": [
+            "Nienke Faas"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            277.6
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            564.5
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_skiff", 
+      "heat_day_time": "zo 15:02 ", 
+      "heattype": "Heat", 
+      "id": "M181x", 
+      "participants": [
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            378.27
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            127.69
+          ], 
+          "lane": 3, 
+          "names": [
+            "Martine van den Boomgaard"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            247.95
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            509.26
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            385.46
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            124.56
+          ], 
+          "lane": 5, 
+          "names": [
+            "Floor van Lieshout"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            256.07
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            516.75
+          ]
+        }, 
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            391.71
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            125.27
+          ], 
+          "lane": 7, 
+          "names": [
+            "Annabel Oggel"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            259.32
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            527.2
+          ]
+        }, 
+        {
+          "crew_code": "NEP", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            394.99
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            127.69
+          ], 
+          "lane": 6, 
+          "names": [
+            "Anne-Men Huyzer"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            263.08
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            533.39
+          ]
+        }, 
+        {
+          "crew_code": "HEM", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            401.61
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            135.01
+          ], 
+          "lane": 2, 
+          "names": [
+            "Annika Does"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            263.96
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            536.9
+          ]
+        }, 
+        {
+          "crew_code": "BRE", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            424.74
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            118.57
+          ], 
+          "lane": 4, 
+          "names": [
+            "Nienke Faas"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            280.35
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            568.88
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_skiff", 
+      "heat_day_time": "zo 15:06 ", 
+      "heattype": "Heat", 
+      "id": "M181x", 
+      "participants": [
+        {
+          "crew_code": "RIC", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            393.01
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            123.77
+          ], 
+          "lane": 7, 
+          "names": [
+            "Siza Kuin"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            260.04
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            527.34
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            402.45
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            130.76
+          ], 
+          "lane": 6, 
+          "names": [
+            "Anna Lisa Labaar"
+          ], 
+          "position": 2, 
+          "ten_pos": 3, 
+          "ten_time": [
+            268.75
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            542.34
+          ]
+        }, 
+        {
+          "crew_code": "ROO", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            404.78
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            129.62
+          ], 
+          "lane": 5, 
+          "names": [
+            "Jori Potters"
+          ], 
+          "position": 3, 
+          "ten_pos": 2, 
+          "ten_time": [
+            268.01
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            544.17
+          ]
+        }, 
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            413.51
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            131.74
+          ], 
+          "lane": 3, 
+          "names": [
+            "Nina Prins"
+          ], 
+          "position": 4, 
+          "ten_pos": 5, 
+          "ten_time": [
+            274.45
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            554.03
+          ]
+        }, 
+        {
+          "crew_code": "ROO", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            423.74
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            135.2
+          ], 
+          "lane": 2, 
+          "names": [
+            "Sterre Nijland"
+          ], 
+          "position": 5, 
+          "ten_pos": 6, 
+          "ten_time": [
+            281.95
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            566.9
+          ]
+        }, 
+        {
+          "crew_code": "VAD", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            422.01
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            127.09
+          ], 
+          "lane": 4, 
+          "names": [
+            "Anouk van Leeuwen"
+          ], 
+          "position": 6, 
+          "ten_pos": 4, 
+          "ten_time": [
+            273.85
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            571.61
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_tweezonder", 
+      "heat_day_time": "za 09:24 ", 
+      "heattype": "Heat", 
+      "id": "M182-", 
+      "participants": [
+        {
+          "crew_code": "SPA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            369.49
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            116.87
+          ], 
+          "lane": 5, 
+          "names": [
+            "Sylle Hoogeveen", 
+            "Fenna Verberne"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            242.29
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            492.41
+          ]
+        }, 
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            383.22
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            125.48
+          ], 
+          "lane": 6, 
+          "names": [
+            "Cerianne van Middelkoop", 
+            "Maureen van Bodegom"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            253.8
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            508.29
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            409.4
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            130.99
+          ], 
+          "lane": 4, 
+          "names": [
+            "Babette Huigsloot", 
+            "Lyke van Dalen"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            270.25
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            546.21
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_tweezonder", 
+      "heat_day_time": "zo 10:24 ", 
+      "heattype": "Heat", 
+      "id": "M182-", 
+      "participants": [
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            391.25
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            127.98
+          ], 
+          "lane": 4, 
+          "names": [
+            "Maureen van Bodegom", 
+            "Cerianne van Middelkoop"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            259.5
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            518.71
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            414.83
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            130.21
+          ], 
+          "lane": 5, 
+          "names": [
+            "Babette Huigsloot", 
+            "Lyke van Dalen"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            272.12
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            553.58
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_dubbeltwee", 
+      "heat_day_time": "za 17:45 ", 
+      "heattype": "Heat", 
+      "id": "M182x", 
+      "participants": [
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            360.09
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            117.16
+          ], 
+          "lane": 6, 
+          "names": [
+            "Hannah Visser", 
+            "Miriam Visser"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            237.23
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            478.64
+          ]
+        }, 
+        {
+          "crew_code": "HUN", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            362.01
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            116.24
+          ], 
+          "lane": 5, 
+          "names": [
+            "Marjolein Scholtens", 
+            "Gaya ten Kate"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            238.69
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            479.03
+          ]
+        }, 
+        {
+          "crew_code": "VAD", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            371.26
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            119.35
+          ], 
+          "lane": 3, 
+          "names": [
+            "Anouk van Leeuwen", 
+            "Isa van &#039;t Leven"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            244.14
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            494.72
+          ]
+        }, 
+        {
+          "crew_code": "HER", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            403.39
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            123.34
+          ], 
+          "lane": 7, 
+          "names": [
+            "Kim de Groot", 
+            "Nynke Zwart"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            263.53
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            543.18
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_dubbeltwee", 
+      "heat_day_time": "za 17:50 ", 
+      "heattype": "Heat", 
+      "id": "M182x", 
+      "participants": [
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            344.9
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            109.27
+          ], 
+          "lane": 7, 
+          "names": [
+            "Anna Verkuil", 
+            "Claudia de Hartog"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            225.32
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            462.01
+          ]
+        }, 
+        {
+          "crew_code": "AMY", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            345.66
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            110.91
+          ], 
+          "lane": 6, 
+          "names": [
+            "Marike Veldhuis", 
+            "Martine Veldhuis"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            227.64
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            462.38
+          ]
+        }, 
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            371.38
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            117.96
+          ], 
+          "lane": 2, 
+          "names": [
+            "Marjolein Visser", 
+            "Esm&eacute;e Oosterlaar"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            244.5
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            494.95
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            370.69
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            120.53
+          ], 
+          "lane": 5, 
+          "names": [
+            "Pleun de Brouwer", 
+            "Marjolein van Lierop"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            245.67
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            495.29
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            377.59
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            122.51
+          ], 
+          "lane": 4, 
+          "names": [
+            "Anne-Men Huyzer", 
+            "Anna Lisa Labaar"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            248.58
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            507.0
+          ]
+        }, 
+        {
+          "crew_code": "DIE", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            387.25
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            122.21
+          ], 
+          "lane": 3, 
+          "names": [
+            "Marte Naaktgeboren", 
+            "Myrna Damstra"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            256.61
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            518.14
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_dubbeltwee", 
+      "heat_day_time": "zo 14:54 ", 
+      "heattype": "Heat", 
+      "id": "M182x", 
+      "participants": [
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            344.75
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            110.21
+          ], 
+          "lane": 5, 
+          "names": [
+            "Anna Verkuil", 
+            "Claudia de Hartog"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            228.62
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            469.78
+          ]
+        }, 
+        {
+          "crew_code": "AMY", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            349.74
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            113.02
+          ], 
+          "lane": 4, 
+          "names": [
+            "Marike Veldhuis", 
+            "Martine Veldhuis"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            231.96
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            474.62
+          ]
+        }, 
+        {
+          "crew_code": "HUN", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            375.53
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            122.47
+          ], 
+          "lane": 3, 
+          "names": [
+            "Marjolein Scholtens", 
+            "Gaya ten Kate"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            251.5
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            502.35
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_dubbeltwee", 
+      "heat_day_time": "zo 14:58 ", 
+      "heattype": "Heat", 
+      "id": "M182x", 
+      "participants": [
+        {
+          "crew_code": "ARC", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            354.88
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            112.21
+          ], 
+          "lane": 4, 
+          "names": [
+            "Marleen van der Meer", 
+            "Lilian Magermans"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            234.42
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            478.99
+          ]
+        }, 
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            360.46
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            114.25
+          ], 
+          "lane": 6, 
+          "names": [
+            "Lieke van Bodegom", 
+            "C&eacute;line den Bremer"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            238.07
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            486.27
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            375.8
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            122.81
+          ], 
+          "lane": 5, 
+          "names": [
+            "Pleun de Brouwer", 
+            "Marjolein van Lierop"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            249.75
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            504.87
+          ]
+        }, 
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            387.68
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            121.57
+          ], 
+          "lane": 3, 
+          "names": [
+            "Sanne van der Brug", 
+            "Esm&eacute;e Oosterlaar"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            254.85
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            517.7
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M18_dubbelvier", 
+      "heat_day_time": "za 14:31 ", 
+      "heattype": "Heat", 
+      "id": "M184x", 
+      "participants": [
+        {
+          "crew_code": "ARC", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            325.97
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            103.97
+          ], 
+          "lane": 5, 
+          "names": [
+            "Lilian Magermans", 
+            "Marleen van der Meer", 
+            "Marike Veldhuis", 
+            "Martine Veldhuis"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            214.87
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            436.5
+          ]
+        }, 
+        {
+          "crew_code": "NEP", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            329.56
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            108.28
+          ], 
+          "lane": 3, 
+          "names": [
+            "Anne-Men Huyzer", 
+            "Gaya ten Kate", 
+            "Marjolein Scholtens", 
+            "Lieke van Bodegom"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            218.99
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            439.78
+          ]
+        }, 
+        {
+          "crew_code": "HEM", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            349.11
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            113.46
+          ], 
+          "lane": 4, 
+          "names": [
+            "Annika Does", 
+            "Annabel Oggel", 
+            "Nina Prins", 
+            "Kim de Groot"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            231.36
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            468.18
+          ]
+        }, 
+        {
+          "crew_code": "DOR", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            360.26
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            111.81
+          ], 
+          "lane": 6, 
+          "names": [
+            "Emma Ashdown", 
+            "Isolde Passchier", 
+            "Ilse van der Noordt", 
+            "Jasmijn Ponssen"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            234.68
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            492.09
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "Meisjes_acht", 
+      "heat_day_time": "zo 17:35 ", 
+      "heattype": "Final", 
+      "id": "Meisjesacht", 
+      "participants": [
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 52020, 
+          "fifteen_time": "no_data", 
+          "five_pos": 14449, 
+          "five_time": "no_data", 
+          "lane": 150188, 
+          "names": [
+            "Anna Verkuil", 
+            "Claudia de Hartog", 
+            "Cerianne van Middelkoop", 
+            "Maureen van Bodegom", 
+            "Marleen van der Meer", 
+            "Marike Veldhuis", 
+            "Martine Veldhuis", 
+            "Lyke van Dalen"
+          ], 
+          "position": 1, 
+          "ten_pos": 33186, 
+          "ten_time": "no_data", 
+          "twenty_pos": 70567, 
+          "twenty_time": "no_data"
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 52333, 
+          "fifteen_time": "no_data", 
+          "five_pos": 14732, 
+          "five_time": "no_data", 
+          "lane": 150188, 
+          "names": [
+            "Anne-Men Huyzer", 
+            "Gaya ten Kate", 
+            "Marjolein Scholtens", 
+            "Marjolein van Lierop", 
+            "Anna Lisa Labaar", 
+            "Pleun de Brouwer", 
+            "Bel&eacute;n de Roba Cortada", 
+            "Lieke van Bodegom"
+          ], 
+          "position": 2, 
+          "ten_pos": 33542, 
+          "ten_time": "no_data", 
+          "twenty_pos": 70944, 
+          "twenty_time": "no_data"
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 53794, 
+          "fifteen_time": "no_data", 
+          "five_pos": 15042, 
+          "five_time": "no_data", 
+          "lane": 156168, 
+          "names": [
+            "Pien de Ruiter", 
+            "Luka van der Zwan", 
+            "Lis Verouden", 
+            "Mirre Dona", 
+            "Britt Coopmans", 
+            "Susan Temming", 
+            "Femke van de Vliet", 
+            "C&eacute;line den Bremer"
+          ], 
+          "position": 3, 
+          "ten_pos": 34210, 
+          "ten_time": "no_data", 
+          "twenty_pos": 73179, 
+          "twenty_time": "no_data"
+        }, 
+        {
+          "crew_code": "PAM", 
+          "fifteen_pos": 55707, 
+          "fifteen_time": "no_data", 
+          "five_pos": 15976, 
+          "five_time": "no_data", 
+          "lane": 156168, 
+          "names": [
+            "Rebecca Kole", 
+            "Wanda Puijk", 
+            "Julia Sprokkerieft", 
+            "Lotte Geldermans", 
+            "Femke Paulis", 
+            "Chantal Spijkers", 
+            "Inez den Hond", 
+            "Isabel Gerdes"
+          ], 
+          "position": 4, 
+          "ten_pos": 35834, 
+          "ten_time": "no_data", 
+          "twenty_pos": 75548, 
+          "twenty_time": "no_data"
+        }
+      ]
+    }, 
+    {
+      "field": "M16_skiff", 
+      "heat_day_time": "za 11:46 ", 
+      "heattype": "Heat", 
+      "id": "M161x", 
+      "participants": [
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            390.18
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            123.38
+          ], 
+          "lane": 4, 
+          "names": [
+            "C&eacute;line den Bremer"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            256.84
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            519.58
+          ]
+        }, 
+        {
+          "crew_code": "GOU", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            388.54
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            124.65
+          ], 
+          "lane": 3, 
+          "names": [
+            "Sera Weevers"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            257.3
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            519.68
+          ]
+        }, 
+        {
+          "crew_code": "RIC", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            396.24
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            125.42
+          ], 
+          "lane": 5, 
+          "names": [
+            "Siza Kuin"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            262.33
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            529.66
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            397.51
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            122.94
+          ], 
+          "lane": 7, 
+          "names": [
+            "Leonoor Kuiperbak"
+          ], 
+          "position": 4, 
+          "ten_pos": 3, 
+          "ten_time": [
+            259.22
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            534.93
+          ]
+        }, 
+        {
+          "crew_code": "LAA", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            412.88
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            128.74
+          ], 
+          "lane": 6, 
+          "names": [
+            "Carlijn Wilms"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            270.8
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            553.3
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_skiff", 
+      "heat_day_time": "za 11:30 ", 
+      "heattype": "Heat", 
+      "id": "M161x", 
+      "participants": [
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            389.93
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            125.67
+          ], 
+          "lane": 3, 
+          "names": [
+            "Ilse Feenstra"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            255.99
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            523.11
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            398.61
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            127.53
+          ], 
+          "lane": 2, 
+          "names": [
+            "Xanne Vos"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            263.82
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            534.82
+          ]
+        }, 
+        {
+          "crew_code": "DDP", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            404.99
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            126.15
+          ], 
+          "lane": 4, 
+          "names": [
+            "Veerle Verhoeven"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            264.56
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            541.2
+          ]
+        }, 
+        {
+          "crew_code": "NAU", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            408.72
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            129.3
+          ], 
+          "lane": 7, 
+          "names": [
+            "Lies Kelder"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            268.51
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            546.94
+          ]
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            412.15
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            128.38
+          ], 
+          "lane": 5, 
+          "names": [
+            "Lis Verouden"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            268.91
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            556.18
+          ]
+        }, 
+        {
+          "crew_code": "LAA", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            417.06
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            136.53
+          ], 
+          "lane": 6, 
+          "names": [
+            "Carmen Kuenen"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            277.74
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            558.08
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_skiff", 
+      "heat_day_time": "za 11:34 ", 
+      "heattype": "Heat", 
+      "id": "M161x", 
+      "participants": [
+        {
+          "crew_code": "SAL", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            388.27
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            122.45
+          ], 
+          "lane": 2, 
+          "names": [
+            "Femke Paulis"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            255.38
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            521.71
+          ]
+        }, 
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            424.11
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            127.69
+          ], 
+          "lane": 5, 
+          "names": [
+            "Eefje Schelling"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            262.83
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            534.87
+          ]
+        }, 
+        {
+          "crew_code": "ARC", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            407.17
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            129.68
+          ], 
+          "lane": 3, 
+          "names": [
+            "Nelly van der Veen"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            268.13
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            546.28
+          ]
+        }, 
+        {
+          "crew_code": "ALP", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            426.54
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            135.1
+          ], 
+          "lane": 6, 
+          "names": [
+            "Julia Sprokkerieft"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            281.01
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            564.65
+          ]
+        }, 
+        {
+          "crew_code": "DAV", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            428.53
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            136.03
+          ], 
+          "lane": 7, 
+          "names": [
+            "Lotte Geldermans"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            281.78
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            565.03
+          ]
+        }, 
+        {
+          "crew_code": "VAD", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            398.33
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            134.6
+          ], 
+          "lane": 4, 
+          "names": [
+            "Bel&eacute;n de Roba Cortada"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            282.31
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            572.56
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_skiff", 
+      "heat_day_time": "za 11:38 ", 
+      "heattype": "Heat", 
+      "id": "M161x", 
+      "participants": [
+        {
+          "crew_code": "LEY", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            390.5
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            125.26
+          ], 
+          "lane": 3, 
+          "names": [
+            "Stella Vissers"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            257.41
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            522.97
+          ]
+        }, 
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            408.22
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            132.25
+          ], 
+          "lane": 5, 
+          "names": [
+            "Ellis Dijkstra"
+          ], 
+          "position": 2, 
+          "ten_pos": 3, 
+          "ten_time": [
+            271.06
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            541.71
+          ]
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            412.02
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            131.67
+          ], 
+          "lane": 7, 
+          "names": [
+            "Luka van der Zwan"
+          ], 
+          "position": 3, 
+          "ten_pos": 2, 
+          "ten_time": [
+            270.8
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            553.8
+          ]
+        }, 
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            418.88
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            136.1
+          ], 
+          "lane": 2, 
+          "names": [
+            "Isabel Gerdes"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            277.58
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            559.05
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            424.89
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            135.8
+          ], 
+          "lane": 6, 
+          "names": [
+            "Shakiela Bouwer"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            280.47
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            570.24
+          ]
+        }, 
+        {
+          "crew_code": "SAL", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            428.01
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            136.13
+          ], 
+          "lane": 4, 
+          "names": [
+            "Chantal Spijkers"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            282.88
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            576.0
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_skiff", 
+      "heat_day_time": "za 11:42 ", 
+      "heattype": "Heat", 
+      "id": "M161x", 
+      "participants": [
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            392.15
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            126.06
+          ], 
+          "lane": 3, 
+          "names": [
+            "Esther Koolstra"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            258.5
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            524.27
+          ]
+        }, 
+        {
+          "crew_code": "GOU", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            403.28
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            127.87
+          ], 
+          "lane": 4, 
+          "names": [
+            "Anne-Fleur van der Zee"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            263.49
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            538.23
+          ]
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            408.01
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            131.79
+          ], 
+          "lane": 5, 
+          "names": [
+            "Pien de Ruiter"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            268.04
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            545.61
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            414.73
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            132.82
+          ], 
+          "lane": 6, 
+          "names": [
+            "Hannah van Westreenen"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            271.9
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            556.46
+          ]
+        }, 
+        {
+          "crew_code": "LEY", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            423.59
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            138.02
+          ], 
+          "lane": 7, 
+          "names": [
+            "N&uacute;ria Stikvoort"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            278.5
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            565.85
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbeltwee", 
+      "heat_day_time": "za 16:52 ", 
+      "heattype": "Heat", 
+      "id": "M162x", 
+      "participants": [
+        {
+          "crew_code": "HOO", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            375.03
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            121.98
+          ], 
+          "lane": 5, 
+          "names": [
+            "Betsie Loeffen", 
+            "Paola Leijssen"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            248.02
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            498.42
+          ]
+        }, 
+        {
+          "crew_code": "GRS", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            375.69
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            124.61
+          ], 
+          "lane": 4, 
+          "names": [
+            "Nona defauw", 
+            "Marielou Guilbert"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            249.4
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            499.83
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            379.93
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            125.85
+          ], 
+          "lane": 3, 
+          "names": [
+            "Hanna Gregoire", 
+            "Virginia de Lange"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            251.97
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            500.19
+          ]
+        }, 
+        {
+          "crew_code": "PAM", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            384.36
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            123.46
+          ], 
+          "lane": 7, 
+          "names": [
+            "Rebecca Kole", 
+            "Wanda Puijk"
+          ], 
+          "position": 4, 
+          "ten_pos": 5, 
+          "ten_time": [
+            254.27
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            509.87
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            382.81
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            122.45
+          ], 
+          "lane": 6, 
+          "names": [
+            "Stascha Kuipers", 
+            "Jos van der Meel"
+          ], 
+          "position": 5, 
+          "ten_pos": 4, 
+          "ten_time": [
+            252.9
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            511.5
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbeltwee", 
+      "heat_day_time": "za 16:57 ", 
+      "heattype": "Heat", 
+      "id": "M162x", 
+      "participants": [
+        {
+          "crew_code": "HUN", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            358.36
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            119.49
+          ], 
+          "lane": 3, 
+          "names": [
+            "Laura van Loenen", 
+            "Joeke Verlinden"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            237.19
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            478.61
+          ]
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            370.95
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            120.07
+          ], 
+          "lane": 5, 
+          "names": [
+            "Susan Temming", 
+            "Femke van de Vliet"
+          ], 
+          "position": 2, 
+          "ten_pos": 3, 
+          "ten_time": [
+            244.11
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            495.29
+          ]
+        }, 
+        {
+          "crew_code": "ROO", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            372.44
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            116.98
+          ], 
+          "lane": 4, 
+          "names": [
+            "Jori Potters", 
+            "Sterre Nijland"
+          ], 
+          "position": 3, 
+          "ten_pos": 2, 
+          "ten_time": [
+            242.77
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            500.21
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            377.72
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            118.99
+          ], 
+          "lane": 6, 
+          "names": [
+            "Marijke van Benschop", 
+            "Emily Herzstein"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            247.02
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            505.64
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            393.33
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            125.4
+          ], 
+          "lane": 7, 
+          "names": [
+            "Iris Klok", 
+            "Nan Prins"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            256.58
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            522.19
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbeltwee", 
+      "heat_day_time": "za 17:02 ", 
+      "heattype": "Heat", 
+      "id": "M162x", 
+      "participants": [
+        {
+          "crew_code": "LEY", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            360.3
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            116.57
+          ], 
+          "lane": 3, 
+          "names": [
+            "N&uacute;ria Stikvoort", 
+            "Stella Vissers"
+          ], 
+          "position": 1, 
+          "ten_pos": 2, 
+          "ten_time": [
+            238.42
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            477.96
+          ]
+        }, 
+        {
+          "crew_code": "GOU", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            359.47
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            117.5
+          ], 
+          "lane": 4, 
+          "names": [
+            "Leonoor Kuiperbak", 
+            "Sera Weevers"
+          ], 
+          "position": 2, 
+          "ten_pos": 1, 
+          "ten_time": [
+            238.08
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            482.54
+          ]
+        }, 
+        {
+          "crew_code": "ALP", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            368.6
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            119.31
+          ], 
+          "lane": 2, 
+          "names": [
+            "Eva Tromp", 
+            "Sarah Tromp"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            243.59
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            492.84
+          ]
+        }, 
+        {
+          "crew_code": "SPA", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            372.79
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            118.22
+          ], 
+          "lane": 7, 
+          "names": [
+            "Danique Botter", 
+            "Jo Schreurs"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            243.96
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            500.04
+          ]
+        }, 
+        {
+          "crew_code": "GRS", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            376.48
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            120.39
+          ], 
+          "lane": 6, 
+          "names": [
+            "Severine Soetaert", 
+            "Jolien Dessein"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            248.39
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            502.13
+          ]
+        }, 
+        {
+          "crew_code": "LAA", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            380.51
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            122.41
+          ], 
+          "lane": 5, 
+          "names": [
+            "Julie Lemoine", 
+            "Maelle Hamon"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            250.97
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            508.28
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbeltwee", 
+      "heat_day_time": "zo 08:00 ", 
+      "heattype": "Heat", 
+      "id": "M162x", 
+      "participants": [
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            370.0
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            119.08
+          ], 
+          "lane": 6, 
+          "names": [
+            "Susan Temming", 
+            "Femke van de Vliet"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            245.57
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            494.41
+          ]
+        }, 
+        {
+          "crew_code": "GOU", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            375.14
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            119.67
+          ], 
+          "lane": 3, 
+          "names": [
+            "Leonoor Kuiperbak", 
+            "Sera Weevers"
+          ], 
+          "position": 2, 
+          "ten_pos": 3, 
+          "ten_time": [
+            250.77
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            503.94
+          ]
+        }, 
+        {
+          "crew_code": "LEY", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            380.31
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            130.79
+          ], 
+          "lane": 5, 
+          "names": [
+            "N&uacute;ria Stikvoort", 
+            "Stella Vissers"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            268.99
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            508.43
+          ]
+        }, 
+        {
+          "crew_code": "GRS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            405.22
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            120.96
+          ], 
+          "lane": 4, 
+          "names": [
+            "Nona defauw", 
+            "Marielou Guilbert"
+          ], 
+          "position": 4, 
+          "ten_pos": 2, 
+          "ten_time": [
+            246.8
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            539.05
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbeltwee", 
+      "heat_day_time": "zo 08:04 ", 
+      "heattype": "Heat", 
+      "id": "M162x", 
+      "participants": [
+        {
+          "crew_code": "SPA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            373.55
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            119.55
+          ], 
+          "lane": 5, 
+          "names": [
+            "Danique Botter", 
+            "Jo Schreurs"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            248.43
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            499.81
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            378.65
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            121.12
+          ], 
+          "lane": 6, 
+          "names": [
+            "Ella Cordus", 
+            "Xanne Vos"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            250.0
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            504.13
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            383.25
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            124.41
+          ], 
+          "lane": 7, 
+          "names": [
+            "Florentine de Boer", 
+            "Inez den Hond"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            254.12
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            512.92
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            387.75
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            127.39
+          ], 
+          "lane": 3, 
+          "names": [
+            "Stascha Kuipers", 
+            "Jos van der Meel"
+          ], 
+          "position": 4, 
+          "ten_pos": 5, 
+          "ten_time": [
+            260.65
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            516.11
+          ]
+        }, 
+        {
+          "crew_code": "PAM", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            393.19
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            123.69
+          ], 
+          "lane": 4, 
+          "names": [
+            "Rebecca Kole", 
+            "Wanda Puijk"
+          ], 
+          "position": 5, 
+          "ten_pos": 4, 
+          "ten_time": [
+            256.67
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            521.69
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbeltwee", 
+      "heat_day_time": "zo 08:08 ", 
+      "heattype": "Heat", 
+      "id": "M162x", 
+      "participants": [
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            401.07
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            129.65
+          ], 
+          "lane": 4, 
+          "names": [
+            "Eefje Schelling", 
+            "Ilse Feenstra"
+          ], 
+          "position": 1, 
+          "ten_pos": 3, 
+          "ten_time": [
+            248.17
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            496.19
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            372.52
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            119.07
+          ], 
+          "lane": 5, 
+          "names": [
+            "Esther Koolstra", 
+            "Hannah van Westreenen"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            246.98
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            496.5
+          ]
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            387.47
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            124.66
+          ], 
+          "lane": 7, 
+          "names": [
+            "Lis Verouden", 
+            "Mirre Dona"
+          ], 
+          "position": 3, 
+          "ten_pos": 1, 
+          "ten_time": [
+            245.92
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            503.17
+          ]
+        }, 
+        {
+          "crew_code": "GRS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            374.83
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            117.87
+          ], 
+          "lane": 3, 
+          "names": [
+            "Jolien Dessein", 
+            "Severine Soetaert"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            256.82
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            513.47
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            373.28
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            121.7
+          ], 
+          "lane": 6, 
+          "names": [
+            "Sigrid Bannenberg", 
+            "Sanne Schripsema"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            264.53
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            535.91
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbeltwee", 
+      "heat_day_time": "zo 08:12 ", 
+      "heattype": "Heat", 
+      "id": "M162x", 
+      "participants": [
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            382.38
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            124.24
+          ], 
+          "lane": 5, 
+          "names": [
+            "Pien de Ruiter", 
+            "Luka van der Zwan"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            252.36
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            510.17
+          ]
+        }, 
+        {
+          "crew_code": "NAU", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            389.27
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            128.05
+          ], 
+          "lane": 3, 
+          "names": [
+            "Noor Dirven", 
+            "Lies Kelder"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            255.3
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            512.89
+          ]
+        }, 
+        {
+          "crew_code": "HOO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            386.03
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            123.69
+          ], 
+          "lane": 7, 
+          "names": [
+            "Heleen Fischer", 
+            "Betsie Loeffen"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            259.39
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            517.16
+          ]
+        }, 
+        {
+          "crew_code": "LAA", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            396.78
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            128.83
+          ], 
+          "lane": 6, 
+          "names": [
+            "Nena Visser", 
+            "Carlijn Wilms"
+          ], 
+          "position": 4, 
+          "ten_pos": 3, 
+          "ten_time": [
+            256.0
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            517.37
+          ]
+        }, 
+        {
+          "crew_code": "SAL", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            387.55
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            123.33
+          ], 
+          "lane": 4, 
+          "names": [
+            "Chantal Spijkers", 
+            "Femke Paulis"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            263.99
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            528.78
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbelvier", 
+      "heat_day_time": "zo 12:33 ", 
+      "heattype": "Heat", 
+      "id": "M164*", 
+      "participants": [
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            361.95
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            118.78
+          ], 
+          "lane": 6, 
+          "names": [
+            "Eefje Schelling", 
+            "Ilse Feenstra", 
+            "Danique Botter", 
+            "Jo Schreurs"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            241.61
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            481.1
+          ]
+        }, 
+        {
+          "crew_code": "ARC", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            363.41
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            119.35
+          ], 
+          "lane": 5, 
+          "names": [
+            "Nelly van der Veen", 
+            "Laura van Loenen", 
+            "Anne-Fleur van der Zee", 
+            "Joeke Verlinden"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            241.81
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            483.09
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            367.7
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            119.78
+          ], 
+          "lane": 3, 
+          "names": [
+            "Hanna Gregoire", 
+            "Emily Herzstein", 
+            "Virginia de Lange", 
+            "Ragna Hoogenboom"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            243.13
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            488.98
+          ]
+        }, 
+        {
+          "crew_code": "ZWO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            376.33
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            119.83
+          ], 
+          "lane": 2, 
+          "names": [
+            "Julia Sprokkerieft", 
+            "Shakiela Bouwer", 
+            "Lotte Geldermans", 
+            "Isabel Gerdes"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            248.16
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            499.79
+          ]
+        }, 
+        {
+          "crew_code": "HOO", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            381.34
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            121.99
+          ], 
+          "lane": 4, 
+          "names": [
+            "Heleen Fischer", 
+            "Maartje Karst", 
+            "Betsie Loeffen", 
+            "Paola Leijssen"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            250.84
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            508.92
+          ]
+        }, 
+        {
+          "crew_code": "LAA", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            381.86
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            125.03
+          ], 
+          "lane": 7, 
+          "names": [
+            "Julie Lemoine", 
+            "Carmen Kuenen", 
+            "Nena Visser", 
+            "Maelle Hamon"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            254.69
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            510.93
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbelvier", 
+      "heat_day_time": "za 14:16 ", 
+      "heattype": "Heat", 
+      "id": "M164x", 
+      "participants": [
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            344.62
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            108.04
+          ], 
+          "lane": 6, 
+          "names": [
+            "Emily Herzstein", 
+            "Marijke van Benschop", 
+            "Anne Martine Klok", 
+            "Hanna Gregoire"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            225.71
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            462.41
+          ]
+        }, 
+        {
+          "crew_code": "LAA", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            354.44
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            114.63
+          ], 
+          "lane": 5, 
+          "names": [
+            "Maelle Hamon", 
+            "Carmen Kuenen", 
+            "Nena Visser", 
+            "Carlijn Wilms"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            232.52
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            472.12
+          ]
+        }, 
+        {
+          "crew_code": "PAM", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            354.58
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            115.94
+          ], 
+          "lane": 4, 
+          "names": [
+            "Rebecca Kole", 
+            "Wanda Puijk", 
+            "Femke Paulis", 
+            "Chantal Spijkers"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            233.22
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            472.62
+          ]
+        }, 
+        {
+          "crew_code": "HOO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            363.59
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            117.47
+          ], 
+          "lane": 3, 
+          "names": [
+            "Heleen Fischer", 
+            "Maartje Karst", 
+            "Betsie Loeffen", 
+            "Paola Leijssen"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            240.79
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            484.53
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbelvier", 
+      "heat_day_time": "za 14:21 ", 
+      "heattype": "Heat", 
+      "id": "M164x", 
+      "participants": [
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            342.76
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            111.29
+          ], 
+          "lane": 5, 
+          "names": [
+            "Britt Coopmans", 
+            "C&eacute;line den Bremer", 
+            "Susan Temming", 
+            "Femke van de Vliet"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            226.78
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            456.39
+          ]
+        }, 
+        {
+          "crew_code": "ARC", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            344.22
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            113.37
+          ], 
+          "lane": 4, 
+          "names": [
+            "Nelly van der Veen", 
+            "Laura van Loenen", 
+            "Anne-Fleur van der Zee", 
+            "Joeke Verlinden"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            228.43
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            458.31
+          ]
+        }, 
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            349.94
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            113.98
+          ], 
+          "lane": 6, 
+          "names": [
+            "Siza Kuin", 
+            "Ellis Dijkstra", 
+            "Virginia de Lange", 
+            "Ragna Hoogenboom"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            232.72
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            465.58
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            357.87
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            116.25
+          ], 
+          "lane": 3, 
+          "names": [
+            "Lies Kelder", 
+            "Noor Dirven", 
+            "Stascha Kuipers", 
+            "Jos van der Meel"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            236.12
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            476.61
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_dubbelvier", 
+      "heat_day_time": "za 14:26 ", 
+      "heattype": "Heat", 
+      "id": "M164x", 
+      "participants": [
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            334.21
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            107.53
+          ], 
+          "lane": 6, 
+          "names": [
+            "Ella Cordus", 
+            "Hannah van Westreenen", 
+            "Esther Koolstra", 
+            "Xanne Vos"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            220.29
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            447.86
+          ]
+        }, 
+        {
+          "crew_code": "MAA", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            336.71
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            110.19
+          ], 
+          "lane": 7, 
+          "names": [
+            "Eefje Schelling", 
+            "Ilse Feenstra", 
+            "Danique Botter", 
+            "Jo Schreurs"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            222.81
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            449.83
+          ]
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            340.67
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            110.72
+          ], 
+          "lane": 5, 
+          "names": [
+            "Pien de Ruiter", 
+            "Lis Verouden", 
+            "Luka van der Zwan", 
+            "Mirre Dona"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            223.83
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            457.6
+          ]
+        }, 
+        {
+          "crew_code": "GRS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            346.1
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            111.35
+          ], 
+          "lane": 4, 
+          "names": [
+            "Marielou Guilbert", 
+            "Jolien Dessein", 
+            "Severine Soetaert", 
+            "Nona defauw"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            228.14
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            462.76
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "M16_acht", 
+      "heat_day_time": "zo 17:40 ", 
+      "heattype": "Heat", 
+      "id": "M168+", 
+      "participants": [
+        {
+          "crew_code": "AMS", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            327.36
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            107.75
+          ], 
+          "lane": 7, 
+          "names": [
+            "Iris Klok", 
+            "Hanna Gregoire", 
+            "Virginia de Lange", 
+            "Ragna Hoogenboom", 
+            "Ellis Dijkstra", 
+            "Emily Neumann", 
+            "Siza Kuin", 
+            "Anne Martine Klok"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            218.66
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            436.77
+          ]
+        }, 
+        {
+          "crew_code": "SPA", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            331.32
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            109.65
+          ], 
+          "lane": 6, 
+          "names": [
+            "Marielou Guilbert", 
+            "Fenna Verberne", 
+            "Severine Soetaert", 
+            "Nona defauw", 
+            "Eefje Schelling", 
+            "Ilse Feenstra", 
+            "Danique Botter", 
+            "Jo Schreurs"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            220.49
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            439.41
+          ]
+        }, 
+        {
+          "crew_code": "WIL", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            335.62
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            114.29
+          ], 
+          "lane": 4, 
+          "names": [
+            "Shakiela Bouwer", 
+            "Florentine de Boer", 
+            "Sanne Schripsema", 
+            "Hannah van Westreenen", 
+            "Ella Cordus", 
+            "Sigrid Bannenberg", 
+            "Esther Koolstra", 
+            "Xanne Vos"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            223.69
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            447.51
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            345.89
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            117.89
+          ], 
+          "lane": 3, 
+          "names": [
+            "N&uacute;ria Stikvoort", 
+            "Stella Vissers", 
+            "Nelly van der Veen", 
+            "Anne-Fleur van der Zee", 
+            "Laura van Loenen", 
+            "Joeke Verlinden", 
+            "Leonoor Kuiperbak", 
+            "Jos van der Meel"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            232.4
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            462.33
+          ]
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            356.5
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            109.85
+          ], 
+          "lane": 5, 
+          "names": [
+            "Lies Kelder", 
+            "Noor Dirven", 
+            "Stascha Kuipers", 
+            "Maelle Hamon", 
+            "Julie Lemoine", 
+            "Carmen Kuenen", 
+            "Nena Visser", 
+            "Carlijn Wilms"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            235.91
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            473.77
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "Meisjes_acht", 
+      "heat_day_time": "zo 17:35 ", 
+      "heattype": "Final", 
+      "id": "Meisjesacht", 
+      "participants": [
+        {
+          "crew_code": "TRO", 
+          "fifteen_pos": 52020, 
+          "fifteen_time": "no_data", 
+          "five_pos": 14449, 
+          "five_time": "no_data", 
+          "lane": 150188, 
+          "names": [
+            "Anna Verkuil", 
+            "Claudia de Hartog", 
+            "Cerianne van Middelkoop", 
+            "Maureen van Bodegom", 
+            "Marleen van der Meer", 
+            "Marike Veldhuis", 
+            "Martine Veldhuis", 
+            "Lyke van Dalen"
+          ], 
+          "position": 1, 
+          "ten_pos": 33186, 
+          "ten_time": "no_data", 
+          "twenty_pos": 70567, 
+          "twenty_time": "no_data"
+        }, 
+        {
+          "crew_code": "DDS", 
+          "fifteen_pos": 52333, 
+          "fifteen_time": "no_data", 
+          "five_pos": 14732, 
+          "five_time": "no_data", 
+          "lane": 150188, 
+          "names": [
+            "Anne-Men Huyzer", 
+            "Gaya ten Kate", 
+            "Marjolein Scholtens", 
+            "Marjolein van Lierop", 
+            "Anna Lisa Labaar", 
+            "Pleun de Brouwer", 
+            "Bel&eacute;n de Roba Cortada", 
+            "Lieke van Bodegom"
+          ], 
+          "position": 2, 
+          "ten_pos": 33542, 
+          "ten_time": "no_data", 
+          "twenty_pos": 70944, 
+          "twenty_time": "no_data"
+        }, 
+        {
+          "crew_code": "VIK", 
+          "fifteen_pos": 53794, 
+          "fifteen_time": "no_data", 
+          "five_pos": 15042, 
+          "five_time": "no_data", 
+          "lane": 156168, 
+          "names": [
+            "Pien de Ruiter", 
+            "Luka van der Zwan", 
+            "Lis Verouden", 
+            "Mirre Dona", 
+            "Britt Coopmans", 
+            "Susan Temming", 
+            "Femke van de Vliet", 
+            "C&eacute;line den Bremer"
+          ], 
+          "position": 3, 
+          "ten_pos": 34210, 
+          "ten_time": "no_data", 
+          "twenty_pos": 73179, 
+          "twenty_time": "no_data"
+        }, 
+        {
+          "crew_code": "PAM", 
+          "fifteen_pos": 55707, 
+          "fifteen_time": "no_data", 
+          "five_pos": 15976, 
+          "five_time": "no_data", 
+          "lane": 156168, 
+          "names": [
+            "Rebecca Kole", 
+            "Wanda Puijk", 
+            "Julia Sprokkerieft", 
+            "Lotte Geldermans", 
+            "Femke Paulis", 
+            "Chantal Spijkers", 
+            "Inez den Hond", 
+            "Isabel Gerdes"
+          ], 
+          "position": 4, 
+          "ten_pos": 35834, 
+          "ten_time": "no_data", 
+          "twenty_pos": 75548, 
+          "twenty_time": "no_data"
+        }
+      ]
+    }, 
+    {
+      "field": "HTal_acht", 
+      "heat_day_time": "zo 09:02 ", 
+      "heattype": "Heat", 
+      "id": "HTal8+", 
+      "participants": [
+        {
+          "crew_code": "ORC", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            295.08
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            94.85
+          ], 
+          "lane": 4, 
+          "names": [
+            "Daan Peerlings", 
+            "Daan Bosshardt", 
+            "Patrick van Wageningen", 
+            "Frank Manders", 
+            "Bart Vollebergh", 
+            "Hidde Negenman", 
+            "Paul van Vulpen", 
+            "Douwe den Held"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            193.96
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            396.95
+          ]
+        }, 
+        {
+          "crew_code": "OKE", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            299.35
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            94.0
+          ], 
+          "lane": 5, 
+          "names": [
+            "Arthur van Ree", 
+            "Pedram Muurlink", 
+            "Wiebe Vossen", 
+            "Joris Sodenkamp", 
+            "Sam Rijkers", 
+            "Martijn Koopman", 
+            "Bram Schipper", 
+            "Roeland Aardewijn"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            194.51
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            402.55
+          ]
+        }, 
+        {
+          "crew_code": "PHO", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            307.91
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            97.99
+          ], 
+          "lane": 6, 
+          "names": [
+            "Maarten van den Nieuwenhuizen", 
+            "Olmo de Boer", 
+            "Martin Hesdahl", 
+            "Sander van Gaal", 
+            "Wessel Martens", 
+            "Niek Moors", 
+            "Tijn Cox", 
+            "Francesco Cinque"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            200.47
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            415.61
+          ]
+        }, 
+        {
+          "crew_code": "EUR", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            336.68
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            104.57
+          ], 
+          "lane": 7, 
+          "names": [
+            "Jordi Weggemans", 
+            "Jorick Clemenkowff", 
+            "Daan Ekkelenkamp", 
+            "Lars van Ruiten", 
+            "Robert-Jan Rensen", 
+            "Bas Coenen", 
+            "christian pieter van kampen", 
+            "Maxim Simon Petrus Geraldus van Wieringen"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            220.44
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            455.54
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "HTal_acht", 
+      "heat_day_time": "zo 09:08 ", 
+      "heattype": "Heat", 
+      "id": "HTal8+", 
+      "participants": [
+        {
+          "crew_code": "TRI", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            294.16
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            91.21
+          ], 
+          "lane": 5, 
+          "names": [
+            "Abe Boswinkel", 
+            "Guido Cornelis", 
+            "Jasper van Dijk", 
+            "Anish Bhatoe", 
+            "Aert Scheper", 
+            "Benjamin Gideonse", 
+            "Quintijn Pit", 
+            "Daan van Eijk"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            192.14
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            395.04
+          ]
+        }, 
+        {
+          "crew_code": "THE", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            298.34
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            97.51
+          ], 
+          "lane": 7, 
+          "names": [
+            "Pim Reefman", 
+            "Jan Wouda", 
+            "Mitchell Timmer", 
+            "Timothy de Vries", 
+            "Joep Sommers", 
+            "Jerome Baart", 
+            "Tom Uijtdehaag", 
+            "Willem Rabsztyn"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            196.91
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            400.28
+          ]
+        }, 
+        {
+          "crew_code": "ARG", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            305.99
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            95.63
+          ], 
+          "lane": 2, 
+          "names": [
+            "Stijn Groten", 
+            "Jasper Wouters", 
+            "Rick Stegeman", 
+            "Daan Adank", 
+            "Nathan Geschiere", 
+            "Christian Monkelbaan", 
+            "Corne van den Berg", 
+            "Sam Vellekoop"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            199.46
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            416.03
+          ]
+        }, 
+        {
+          "crew_code": "ASO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            310.02
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            96.96
+          ], 
+          "lane": 4, 
+          "names": [
+            "Tom van Beek", 
+            "Pieter de Weerd", 
+            "Joris Pries", 
+            "Jelle Jaspar", 
+            "Jarno Hagelen", 
+            "Ludo Vahle", 
+            "Frans Haagsma", 
+            "Fabian Bos"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            204.1
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            416.48
+          ]
+        }, 
+        {
+          "crew_code": "NER", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            319.45
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            101.39
+          ], 
+          "lane": 6, 
+          "names": [
+            "Pepijn Mensink", 
+            "Martijn Muller", 
+            "Friso van Alphen", 
+            "Bas Brits", 
+            "Arnolt-Jan Hoving", 
+            "Peer Rietveld", 
+            "Bob van den Hoogen", 
+            "Toon van Holten tot Echten"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            207.88
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            429.06
+          ]
+        }, 
+        {
+          "crew_code": "VID", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            324.99
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            100.75
+          ], 
+          "lane": 3, 
+          "names": [
+            "Djay Boejharat", 
+            "Freek bahlke", 
+            "Glenn Kasser", 
+            "Guido van Gerwen", 
+            "Patrick Strauven", 
+            "Rens Vonk", 
+            "Steffen a Golz", 
+            "Tommy Mortier"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            211.58
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            436.1
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "HTal_acht", 
+      "heat_day_time": "zo 09:14 ", 
+      "heattype": "Heat", 
+      "id": "HTal8+", 
+      "participants": [
+        {
+          "crew_code": "GYA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            289.43
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            92.52
+          ], 
+          "lane": 2, 
+          "names": [
+            "Milan Grunewald", 
+            "Sjoerd Jansman", 
+            "Bastiaan Buschman", 
+            "Stef de Jong", 
+            "Douwe Bakker", 
+            "Wouter Zwart", 
+            "Jorn Haverkort", 
+            "Mike Beld"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            190.18
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            389.16
+          ]
+        }, 
+        {
+          "crew_code": "PRO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            296.34
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            94.67
+          ], 
+          "lane": 5, 
+          "names": [
+            "Evert Poots", 
+            "Maarten Kruis", 
+            "Jeroen Koster", 
+            "Ward Seeger", 
+            "Albert de Vries", 
+            "Bastiaan R&ouml;ell", 
+            "Henk Pors", 
+            "Tim de Bruijn"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            195.64
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            396.38
+          ]
+        }, 
+        {
+          "crew_code": "SKO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            299.29
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            98.71
+          ], 
+          "lane": 4, 
+          "names": [
+            "Jasper Meijer", 
+            "Jasper Snoek", 
+            "Pim Laan", 
+            "Marius Lam", 
+            "Rens Weenink", 
+            "Marnick van der Meulen", 
+            "Stijn Stevens", 
+            "Espen Tierolff"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            198.54
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            399.99
+          ]
+        }, 
+        {
+          "crew_code": "LAG", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            298.86
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            98.12
+          ], 
+          "lane": 6, 
+          "names": [
+            "D.J.L. Seegers", 
+            "P.S.M. Bussemakers", 
+            "D.J.A. van Wijck", 
+            "C.R. Cornelisse", 
+            "T.S. Overgaauw", 
+            "J.M. van der Veldt", 
+            "K.M. Snel", 
+            "W.W. Lohle"
+          ], 
+          "position": 4, 
+          "ten_pos": 3, 
+          "ten_time": [
+            198.12
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            403.36
+          ]
+        }, 
+        {
+          "crew_code": "NJO", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            306.28
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            98.32
+          ], 
+          "lane": 7, 
+          "names": [
+            "Yves Haverkamp", 
+            "Sietse Terpstra", 
+            "Erik Steenis", 
+            "Wilco Verhoef", 
+            "David Vuijk", 
+            "Olaf Kramer", 
+            "Milan Pastoors", 
+            "Geert van der Valk"
+          ], 
+          "position": 5, 
+          "ten_pos": 6, 
+          "ten_time": [
+            201.81
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            412.7
+          ]
+        }, 
+        {
+          "crew_code": "SKA", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            309.37
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            98.51
+          ], 
+          "lane": 3, 
+          "names": [
+            "Simon van Baal", 
+            "Joris van Geest", 
+            "Ward Veenman", 
+            "Arend-Jan Van Meerkerk", 
+            "Marc Levinson", 
+            "Richard Kempen", 
+            "Tom van Dijk", 
+            "Ivan Kalinichenka"
+          ], 
+          "position": 6, 
+          "ten_pos": 5, 
+          "ten_time": [
+            201.5
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            418.05
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "HTal_acht", 
+      "heat_day_time": "zo 15:40 ", 
+      "heattype": "Final A", 
+      "id": "HTal8+", 
+      "participants": [
+        {
+          "crew_code": "TRI", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            289.33
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            91.3
+          ], 
+          "lane": 5, 
+          "names": [
+            "Abe Boswinkel", 
+            "Guido Cornelis", 
+            "Jasper van Dijk", 
+            "Anish Bhatoe", 
+            "Aert Scheper", 
+            "Benjamin Gideonse", 
+            "Quintijn Pit", 
+            "Daan van Eijk"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            189.88
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            388.78
+          ]
+        }, 
+        {
+          "crew_code": "GYA", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            290.31
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            92.13
+          ], 
+          "lane": 6, 
+          "names": [
+            "Milan Grunewald", 
+            "Sjoerd Jansman", 
+            "Bastiaan Buschman", 
+            "Stef de Jong", 
+            "Douwe Bakker", 
+            "Wouter Zwart", 
+            "Jorn Haverkort", 
+            "Mike Beld"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            191.16
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            391.4
+          ]
+        }, 
+        {
+          "crew_code": "PRO", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            294.77
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            93.05
+          ], 
+          "lane": 3, 
+          "names": [
+            "Evert Poots", 
+            "Maarten Kruis", 
+            "Jeroen Koster", 
+            "Ward Seeger", 
+            "Albert de Vries", 
+            "Bastiaan R&ouml;ell", 
+            "Henk Pors", 
+            "Tim de Bruijn"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            193.03
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            395.67
+          ]
+        }, 
+        {
+          "crew_code": "OKE", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            297.89
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            94.19
+          ], 
+          "lane": 2, 
+          "names": [
+            "Arthur van Ree", 
+            "Pedram Muurlink", 
+            "Wiebe Vossen", 
+            "Joris Sodenkamp", 
+            "Sam Rijkers", 
+            "Martijn Koopman", 
+            "Bram Schipper", 
+            "Roeland Aardewijn"
+          ], 
+          "position": 4, 
+          "ten_pos": 5, 
+          "ten_time": [
+            196.67
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            397.99
+          ]
+        }, 
+        {
+          "crew_code": "ORC", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            298.22
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            97.82
+          ], 
+          "lane": 4, 
+          "names": [
+            "Daan Peerlings", 
+            "Daan Bosshardt", 
+            "Patrick van Wageningen", 
+            "Frank Manders", 
+            "Bart Vollebergh", 
+            "Hidde Negenman", 
+            "Paul van Vulpen", 
+            "Douwe den Held"
+          ], 
+          "position": 5, 
+          "ten_pos": 4, 
+          "ten_time": [
+            195.57
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            399.6
+          ]
+        }, 
+        {
+          "crew_code": "THE", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            302.72
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            94.49
+          ], 
+          "lane": 7, 
+          "names": [
+            "Pim Reefman", 
+            "Jan Wouda", 
+            "Mitchell Timmer", 
+            "Timothy de Vries", 
+            "Joep Sommers", 
+            "Jerome Baart", 
+            "Tom Uijtdehaag", 
+            "Willem Rabsztyn"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            200.14
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            406.32
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "DTal_acht", 
+      "heat_day_time": "zo 08:44 ", 
+      "heattype": "Heat", 
+      "id": "DTal8+", 
+      "participants": [
+        {
+          "crew_code": "GYA", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            339.79
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            107.45
+          ], 
+          "lane": 7, 
+          "names": [
+            "Ilse van den Bergh", 
+            "Anna Koerhuis", 
+            "Iris Lubben", 
+            "Marjolein van der Putten", 
+            "Anneke Visser", 
+            "Ymkje Clevering", 
+            "Anne van Wijk", 
+            "Lucy Talens"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            223.85
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            454.95
+          ]
+        }, 
+        {
+          "crew_code": "SKO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            341.99
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            106.23
+          ], 
+          "lane": 5, 
+          "names": [
+            "Marloes Ekkelkamp", 
+            "Hanna Sevinga", 
+            "Marieke Evertzen", 
+            "Chlo? Wichard", 
+            "Anne-Sophie Romijn", 
+            "Els Hovinga", 
+            "Marjolein Gevers", 
+            "Elise van Tol"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            224.03
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            459.32
+          ]
+        }, 
+        {
+          "crew_code": "SAU", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            345.09
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            109.37
+          ], 
+          "lane": 3, 
+          "names": [
+            "Lienke Roos", 
+            "Yvonne Einerhand", 
+            "Bregje Dijkstra", 
+            "Lotte Hoogkamer", 
+            "Judith Uijttenwaal", 
+            "Charlotte Eissing", 
+            "Marieke Verschoor", 
+            "Jolein Hallegraeff"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            227.34
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            461.28
+          ]
+        }, 
+        {
+          "crew_code": "NJO", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            352.09
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            112.37
+          ], 
+          "lane": 4, 
+          "names": [
+            "Lisa Ruijgrok", 
+            "Jennifer Breet", 
+            "Marit Kosmeijer", 
+            "Mirte Volk", 
+            "Emma Verwey", 
+            "Nienke Rodenhuis", 
+            "Isabelle Wilcke", 
+            "Anne Voskamp"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            231.08
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            469.47
+          ]
+        }, 
+        {
+          "crew_code": "EUR", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            374.16
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            121.05
+          ], 
+          "lane": 6, 
+          "names": [
+            "Ilse van Bruggen", 
+            "Janneke Hamburg", 
+            "Sanne Jansen", 
+            "Minke Holleboom", 
+            "Nienke Adema", 
+            "Franka Roorda", 
+            "Evelyn van de Bildt", 
+            "Joske Kroon"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            249.32
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            500.49
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "DTal_acht", 
+      "heat_day_time": "zo 08:50 ", 
+      "heattype": "Heat", 
+      "id": "DTal8+", 
+      "participants": [
+        {
+          "crew_code": "ORC", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            333.5
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            103.85
+          ], 
+          "lane": 3, 
+          "names": [
+            "Eline Overduin", 
+            "Tessa Gutker", 
+            "Eva Krikken", 
+            "Fabienne Derks", 
+            "Eline Berghorst", 
+            "Inge Schoenmaker", 
+            "Maaike Blekman", 
+            "Laura Deben"
+          ], 
+          "position": 1, 
+          "ten_pos": 3, 
+          "ten_time": [
+            221.36
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            448.03
+          ]
+        }, 
+        {
+          "crew_code": "NER", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            335.92
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            105.76
+          ], 
+          "lane": 6, 
+          "names": [
+            "Margot Rakers", 
+            "Floor Reukers", 
+            "Isabel van Walree", 
+            "Cato Kleipool", 
+            "Milon de Jong", 
+            "Catherine van Es", 
+            "Lotte Westerbeek", 
+            "Roline Montijn"
+          ], 
+          "position": 2, 
+          "ten_pos": 2, 
+          "ten_time": [
+            220.77
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            450.95
+          ]
+        }, 
+        {
+          "crew_code": "OKE", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            340.25
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            105.26
+          ], 
+          "lane": 4, 
+          "names": [
+            "Rianne Brood", 
+            "Ruby Ingwersen", 
+            "Maud Eriks", 
+            "Pien Laumans", 
+            "Eveline van Beek", 
+            "Mirjam Dalenberg", 
+            "Wilanne Nieman", 
+            "Rosanne Koekkoek"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            222.58
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            457.13
+          ]
+        }, 
+        {
+          "crew_code": "SKA", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            339.06
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            108.37
+          ], 
+          "lane": 5, 
+          "names": [
+            "Martina Sprong", 
+            "Isa Zuijderduijn", 
+            "Else Blauw", 
+            "Vera Batelaan", 
+            "Johanna Birckenstock", 
+            "Dora Angyal", 
+            "Tamara Thuis", 
+            "Florence Blaauwgeers"
+          ], 
+          "position": 4, 
+          "ten_pos": 6, 
+          "ten_time": [
+            233.76
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            458.5
+          ]
+        }, 
+        {
+          "crew_code": "PRO", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            351.21
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            113.65
+          ], 
+          "lane": 2, 
+          "names": [
+            "Eline Donkersloot", 
+            "Suzanne Assen", 
+            "Ilse de Jong", 
+            "Fleur Wellen", 
+            "Mina Boogaard", 
+            "Liselotte Mulder", 
+            "Alexandra van der Most", 
+            "Lili Braam"
+          ], 
+          "position": 5, 
+          "ten_pos": 1, 
+          "ten_time": [
+            218.58
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            467.58
+          ]
+        }, 
+        {
+          "crew_code": "ASO", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            348.19
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            110.52
+          ], 
+          "lane": 7, 
+          "names": [
+            "Myrthe van der Graaf", 
+            "Eva Britsia", 
+            "Kim Rosendahl", 
+            "Merlijn Bronts", 
+            "Juliejet Bakker", 
+            "Nienke Meinsma", 
+            "Ella Visser", 
+            "Sanne Dijkstra"
+          ], 
+          "position": 6, 
+          "ten_pos": 5, 
+          "ten_time": [
+            230.14
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            469.24
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "DTal_acht", 
+      "heat_day_time": "zo 08:56 ", 
+      "heattype": "Heat", 
+      "id": "DTal8+", 
+      "participants": [
+        {
+          "crew_code": "TRI", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            328.92
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            102.54
+          ], 
+          "lane": 7, 
+          "names": [
+            "Floor van den Dolder", 
+            "Laura Kooij", 
+            "Roos van Swieten", 
+            "Anna van Swieten", 
+            "Franca Duym", 
+            "Linda van den Goor", 
+            "Anouk van Amerongen", 
+            "Anna Zondag"
+          ], 
+          "position": 1, 
+          "ten_pos": 1, 
+          "ten_time": [
+            214.17
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            443.23
+          ]
+        }, 
+        {
+          "crew_code": "PHO", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            341.09
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            113.31
+          ], 
+          "lane": 4, 
+          "names": [
+            "Jolien Vijge", 
+            "Ymke van Griensven", 
+            "Anke Nijenhuis", 
+            "Karlijn van Dreumel", 
+            "Yvette Kruse", 
+            "Laura Teunissen", 
+            "Melany Winter", 
+            "Harmke Hulshof"
+          ], 
+          "position": 2, 
+          "ten_pos": 6, 
+          "ten_time": [
+            234.2
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            458.46
+          ]
+        }, 
+        {
+          "crew_code": "LAG", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            354.05
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            112.43
+          ], 
+          "lane": 5, 
+          "names": [
+            "C.B.M.D. Willemse", 
+            "S. Brooijmans", 
+            "M.B. Hulst", 
+            "U. Post", 
+            "E.L. Scheffers", 
+            "W. Dommisse", 
+            "L.C.M. Michielsen", 
+            "A. van Winsen"
+          ], 
+          "position": 3, 
+          "ten_pos": 4, 
+          "ten_time": [
+            231.76
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            474.83
+          ]
+        }, 
+        {
+          "crew_code": "AEG", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            355.28
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            106.03
+          ], 
+          "lane": 6, 
+          "names": [
+            "Marike Fowler", 
+            "Lobke Slief", 
+            "Annemarijn de Boer", 
+            "Anne Lotte Vissink", 
+            "Roos Hollander", 
+            "Micky Karsten", 
+            "Eva Meester", 
+            "Nienke van der Drift"
+          ], 
+          "position": 4, 
+          "ten_pos": 3, 
+          "ten_time": [
+            231.47
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            476.34
+          ]
+        }, 
+        {
+          "crew_code": "ARG", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            357.04
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            109.93
+          ], 
+          "lane": 2, 
+          "names": [
+            "Aranka Windmeijer", 
+            "Marlies Koerts", 
+            "Marjolein Broos", 
+            "Nienke de Vries", 
+            "Kristina Reinbold", 
+            "Josephine van Eggelen", 
+            "Lisanne Keijzer", 
+            "Deanne Verkroost"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            233.35
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            479.37
+          ]
+        }, 
+        {
+          "crew_code": "THE", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            360.2
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            111.13
+          ], 
+          "lane": 3, 
+          "names": [
+            "Maartje de Jong", 
+            "Eefke Winkelmolen", 
+            "Inge Verheul", 
+            "Laura Jacobs", 
+            "Lisa Klok", 
+            "Sophie Remie", 
+            "Dominique F&Atilde;&frac14;rst", 
+            "Lisa van Slagmaat"
+          ], 
+          "position": 6, 
+          "ten_pos": 2, 
+          "ten_time": [
+            222.94
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            482.91
+          ]
+        }
+      ]
+    }, 
+    {
+      "field": "DTal_acht", 
+      "heat_day_time": "zo 15:34 ", 
+      "heattype": "Final A", 
+      "id": "DTal8+", 
+      "participants": [
+        {
+          "crew_code": "NER", 
+          "fifteen_pos": 2, 
+          "fifteen_time": [
+            327.89
+          ], 
+          "five_pos": 2, 
+          "five_time": [
+            105.02
+          ], 
+          "lane": 7, 
+          "names": [
+            "Margot Rakers", 
+            "Floor Reukers", 
+            "Isabel van Walree", 
+            "Cato Kleipool", 
+            "Milon de Jong", 
+            "Catherine van Es", 
+            "Lotte Westerbeek", 
+            "Roline Montijn"
+          ], 
+          "position": 1, 
+          "ten_pos": 2, 
+          "ten_time": [
+            218.02
+          ], 
+          "twenty_pos": 1, 
+          "twenty_time": [
+            441.55
+          ]
+        }, 
+        {
+          "crew_code": "ORC", 
+          "fifteen_pos": 1, 
+          "fifteen_time": [
+            327.01
+          ], 
+          "five_pos": 1, 
+          "five_time": [
+            103.09
+          ], 
+          "lane": 6, 
+          "names": [
+            "Eline Overduin", 
+            "Tessa Gutker", 
+            "Eva Krikken", 
+            "Fabienne Derks", 
+            "Eline Berghorst", 
+            "Inge Schoenmaker", 
+            "Maaike Blekman", 
+            "Laura Deben"
+          ], 
+          "position": 2, 
+          "ten_pos": 1, 
+          "ten_time": [
+            214.71
+          ], 
+          "twenty_pos": 2, 
+          "twenty_time": [
+            441.94
+          ]
+        }, 
+        {
+          "crew_code": "TRI", 
+          "fifteen_pos": 3, 
+          "fifteen_time": [
+            336.75
+          ], 
+          "five_pos": 5, 
+          "five_time": [
+            108.33
+          ], 
+          "lane": 4, 
+          "names": [
+            "Floor van den Dolder", 
+            "Laura Kooij", 
+            "Roos van Swieten", 
+            "Anna van Swieten", 
+            "Franca Duym", 
+            "Linda van den Goor", 
+            "Anouk van Amerongen", 
+            "Anna Zondag"
+          ], 
+          "position": 3, 
+          "ten_pos": 3, 
+          "ten_time": [
+            223.31
+          ], 
+          "twenty_pos": 3, 
+          "twenty_time": [
+            453.0
+          ]
+        }, 
+        {
+          "crew_code": "GYA", 
+          "fifteen_pos": 4, 
+          "fifteen_time": [
+            340.51
+          ], 
+          "five_pos": 3, 
+          "five_time": [
+            106.51
+          ], 
+          "lane": 5, 
+          "names": [
+            "Ilse van den Bergh", 
+            "Anna Koerhuis", 
+            "Iris Lubben", 
+            "Marjolein van der Putten", 
+            "Anneke Visser", 
+            "Ymkje Clevering", 
+            "Anne van Wijk", 
+            "Lucy Talens"
+          ], 
+          "position": 4, 
+          "ten_pos": 4, 
+          "ten_time": [
+            224.31
+          ], 
+          "twenty_pos": 4, 
+          "twenty_time": [
+            457.77
+          ]
+        }, 
+        {
+          "crew_code": "PHO", 
+          "fifteen_pos": 6, 
+          "fifteen_time": [
+            343.97
+          ], 
+          "five_pos": 4, 
+          "five_time": [
+            107.79
+          ], 
+          "lane": 2, 
+          "names": [
+            "Jolien Vijge", 
+            "Ymke van Griensven", 
+            "Anke Nijenhuis", 
+            "Karlijn van Dreumel", 
+            "Yvette Kruse", 
+            "Laura Teunissen", 
+            "Melany Winter", 
+            "Harmke Hulshof"
+          ], 
+          "position": 5, 
+          "ten_pos": 5, 
+          "ten_time": [
+            226.42
+          ], 
+          "twenty_pos": 5, 
+          "twenty_time": [
+            459.38
+          ]
+        }, 
+        {
+          "crew_code": "SKO", 
+          "fifteen_pos": 5, 
+          "fifteen_time": [
+            343.73
+          ], 
+          "five_pos": 6, 
+          "five_time": [
+            108.66
+          ], 
+          "lane": 3, 
+          "names": [
+            "Marloes Ekkelkamp", 
+            "Hanna Sevinga", 
+            "Marieke Evertzen", 
+            "Chlo? Wichard", 
+            "Anne-Sophie Romijn", 
+            "Els Hovinga", 
+            "Marjolein Gevers", 
+            "Elise van Tol"
+          ], 
+          "position": 6, 
+          "ten_pos": 6, 
+          "ten_time": [
+            226.65
+          ], 
+          "twenty_pos": 6, 
+          "twenty_time": [
+            463.48
+          ]
+        }
+      ]
+    }
+  ], 
+  "name": "NSRF Slotwedstrijden"
+}
