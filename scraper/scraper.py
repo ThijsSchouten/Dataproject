@@ -16,10 +16,9 @@ import pattern
 from pattern.web import Element, URL, DOM, abs, plaintext
 
 # --------------------------------------------------------------------------
-# Constant
+# Constants
 
 REGATTA_TITLE = "HOLLANDIA 2013"
-JSON_TITLE = "TEST2"
 REGATTA_URL = "http://regatta.time-team.nl/hollandia/2013/results/matrix.php"
 
 # --------------------------------------------------------------------------
@@ -34,6 +33,8 @@ def scrape_heat_urls(regatta_url, regatta_dom):
     '''
 
     heat_urls = []
+
+
 
     # Save absolute links to heats
     for link in regatta_dom('a'):
@@ -151,8 +152,6 @@ def scrape_heat_page(heat_url):
                         team["_uniqueID"] = team["_code"] + "  " + str(\
                                             hash(str(team["_people"]) +\
                                             str(race_dictionary["_time"])))
-
-                        print team["_uniqueID"]
 
                         teams_list.append(team)
 
@@ -423,8 +422,6 @@ def get_weekday(input_string):
 # Main 
 
 def main():
-    '''
-    '''
 
     # Set up dictionaries
     regatta_dict = {}
@@ -434,6 +431,9 @@ def main():
     url = URL(REGATTA_URL)
     dom = DOM(url.download(cached=True, unicode=True))
 
+    # If scraping does not work, try \:
+    # DOM(url.download(cached=True, unicode=True))
+
     # Fetch heat urls
     heat_urls = scrape_heat_urls(url, dom) 
 
@@ -441,7 +441,7 @@ def main():
     regatta_fields = []
 
     # Save data for every heat
-    for heat in heat_urls[:]:
+    for heat in heat_urls:
         heat_data = scrape_heat_page(heat)
 
         for race_dictionary in heat_data:

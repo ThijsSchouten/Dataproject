@@ -82,8 +82,12 @@ function update_heat_graph() {
 // ------------------ Graph drawing functions 
 
 function heat_graph(json_file_loc, element, fieldlist) {
-
-    // Plotting the graph ---------------------------------------------
+    /*
+     Draw a barchart for every list in fieldlist
+     @json_file_loc: json input file location
+     @element: the element to draw svg in
+     @fieldlist: list of lists, containing [regatta, field] to draw
+    */
     d3.json(json_file_loc, function(error, json) {
         if (error) return console.warn("error loading json");
 
@@ -152,6 +156,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
                 }
             }
 
+            // Set up vars for D3 
             var margin = {top: 45, right: 10, bottom: 40, left: 50},
             width = 230 - margin.left - margin.right,
             height = 300 - margin.top - margin.bottom;
@@ -170,9 +175,10 @@ function heat_graph(json_file_loc, element, fieldlist) {
             var yAxis = d3.svg.axis()
                 .scale(y)
                 .orient("left")
-                .ticks(8)
+                .ticks(5)
                 .tickFormat(function(d,i) {return formatMinutes(d)});
 
+            // Select element to place svg in
             var svg = d3.select(element)
                 .append("svg")
                     .attr("width", width + margin.left + margin.right)
@@ -181,8 +187,10 @@ function heat_graph(json_file_loc, element, fieldlist) {
                     .attr("transform", "translate(" + margin.left + "," +
                           margin.top + ")");
 
+            // Set y domain 
             y.domain(ydomain)
 
+            // Add x-axis 
             svg.append("g")
                 .attr("class", "x axis")
                 .attr("transform", "translate(0," + height + ")")
@@ -193,7 +201,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
                 .style("text-anchor", "end")
                 .text(function() {if (iter < 1) { return "Lane"}}); 
 
-            // only add the y-axis on first viz
+            // Add the y-axis on first viz, skip for others
             if (iter < 1) {
                 svg.append("g")
                     .attr("class", "y axis")
@@ -206,7 +214,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
                     .text("Finish time");
             }
 
-            // title text
+            // Add title text
             svg.append("text")
                 .attr("class", "g_title")
                 .attr("x", (width / 2))             
@@ -216,7 +224,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
 
             var tip = d3.select("#tooltip") 
 
-            // add the bars
+            // Add the bars
             svg.selectAll(".bar")
                 .data(dataset)
               .enter().append("rect")
@@ -239,7 +247,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
                             .style("opacity", 0);   
                     });
 
-            // crew names
+            // Add crew names to top of bar
             svg.selectAll("crew_code")
                 .data(dataset)
               .enter().append("text")
@@ -253,6 +261,14 @@ function heat_graph(json_file_loc, element, fieldlist) {
 }
 
 function regatta_graph(json_file_loc, element, regatta) {
+    /*
+     Draws a chart for every days of a regatta. Calculates
+     speed based on 2000m times and compares speed to quickest
+     times in list.
+     @json_file_loc: json input file location
+     @element: the element to draw svg in
+     @regatta: the regatta to visualize
+    */
 
     // Set up size of the graph 
     var margin = {top: 45, right: 60, bottom: 60, left: 35},
@@ -401,6 +417,13 @@ function regatta_graph(json_file_loc, element, regatta) {
                 .attr("y", 0 - (margin.top / 3))
                 .attr("text-anchor", "middle")
                 .text(dayname)
+
+            svg.append("text")
+                .attr("class", "g_title")
+                .attr("x", width+17)             
+                .attr("y", 0 - (margin.top / 3))
+                .attr("text-anchor", "middle")
+                .text("AVG ▼")
  
             // x axis text
             svg.append("g")
@@ -484,7 +507,7 @@ function regatta_graph(json_file_loc, element, regatta) {
                     })   
     
 
-            // make circles
+            // draw the dots for every team
             svg.selectAll("dot_")
                 .data(dataset)
               .enter().append("circle")
@@ -545,21 +568,18 @@ function laneadv_graph(json_file_loc, element, regatta) {
 
     var tip = d3.select("#tooltip")
 
-    // call the JSON file
+    // Call the JSON file
     d3.json(json_file_loc, function(error, json) {
         if (error) return console.warn("error loading json");
-
-        // voor elke heat met _regtitle NSRF 2014 (regatta dus)
-        // sla het volgende op.. : baan, positie, ploeg, veld
 
         var dataset_sat = [],
             dataset_sun = [];
         
-        // for every field, save the index 
+        // For every field, save the index 
         for (var i in json.heats) {
             if (json.heats[i]._regtitle === regatta) {
 
-                // save every team data needed for the graph and tooltip
+                // Save every team data needed for the graph and tooltip
                 for (var j in json.heats[i]._teams) {
                     var crew = {_2000m: json.heats[i]._teams[j]._2000m[0],  
                                       _lane: json.heats[i]._teams[j]._lane, 
@@ -622,7 +642,7 @@ function laneadv_graph(json_file_loc, element, regatta) {
                 .style("text-anchor", "end")
                 .text("Start Time");
 
-            // grey-white background on lanes
+            // Grey-white background on lanes
             svg.selectAll("rect_laneadv")
                 .data([0,1,2,3,4,5,6,7])                
               .enter().append("rect")
@@ -651,13 +671,11 @@ function laneadv_graph(json_file_loc, element, regatta) {
             svg.selectAll("dot_laneadv")
                 .data(dataset)
               .enter().append("circle")
-                .attr("class", "dot_laneadv")
+                .attr("class", function(d,i) { if (dataset[i]._status === "Final") {
+                                                return "dot_final";} return "dot_heat"})
                 .attr("cx", function(d,i) { return x(dataset[i]._lane) + 9} )
                 .attr("cy", function(d,i) { return y(minuteNumber(d._time))})
                 .attr("r", function(d,i) { return 8-(dataset[i]._finish)})
-                /*.attr("fill", function(d,i) { if (dataset[i]._status 
-                                                    === "Final") {return "url(#stripe_pattern)";}
-                                                return "#0B486B"})*/
                 
                 .on("mouseover", function(d,i) { 
                     var lane = dataset[i]._lane,
@@ -686,9 +704,11 @@ function laneadv_graph(json_file_loc, element, regatta) {
 
 function draw_rosetemp(date, element, weather_loc) {
     /*
-    Draws a windrose rotated to that days winddirection
-    Adds the avg windspeed as well.
-    Input: date of race, element to draw in, csv dir
+     Draws a windrose rotated to that days winddirection
+     Adds the avg windspeed as well.
+     @date: date of race
+     @element: element to draw svg in
+     @weather_loc: location of csv
     */
 
     // Set up size of the graph 
@@ -696,15 +716,17 @@ function draw_rosetemp(date, element, weather_loc) {
         width = 240 - margin.left - margin.right,
         height = 100 - margin.top - margin.bottom;
 
+    // Read the csv file
     d3.csv(weather_loc, function(data) {
 
+        // Select element, append svg
         var svg = d3.select(element)
                   .append("svg")
                     .attr("width", width + margin.left + margin.right)
                     .attr("height", height + margin.top + margin.bottom)
 
+        // Save weather data to list
         var weather = []
-
         for (var i in data) {
             if (data[i].Datum === date) {
                 weather.push({wind_direct: data[i].Wind_direct,
@@ -713,6 +735,7 @@ function draw_rosetemp(date, element, weather_loc) {
             }
         }
 
+        // Add the date as a title
         svg.append("text")
             .attr("class", "g_title")
             .attr("x", (width/2+margin.left))             
@@ -720,10 +743,10 @@ function draw_rosetemp(date, element, weather_loc) {
             .attr("text-anchor", "middle")
             .text(date)
 
+        // Set x,y to position relative to
         var start = {x: 120, y: 75}
-        // north points to 75, thus:
-        var corrected_north = (weather[0].wind_direct)
 
+        // Add the North symbol to rose
         svg.append("text")
             .attr("class", "g_rose")
             .attr("x", start.x)             
@@ -731,6 +754,7 @@ function draw_rosetemp(date, element, weather_loc) {
             .attr("text-anchor", "middle")
             .text("N")
 
+        // Add "DAY AVG" text
         svg.append("text")
             .attr("class", "g_rose")
             .attr("x", 11)             
@@ -738,6 +762,7 @@ function draw_rosetemp(date, element, weather_loc) {
             .attr("text-anchor", "left")
             .text("DAY AVG: ")
 
+        // Format the wind speed and add
         svg.append("text")
             .attr("class", "g_rose")
             .attr("x", start.x+30)             
@@ -745,6 +770,7 @@ function draw_rosetemp(date, element, weather_loc) {
             .attr("text-anchor", "left")
             .text(weather[0].wind_speed/10 + " m/s")
 
+        // Draw the windrose's circle
         svg.selectAll("circle_rose")
             .data(weather)
           .enter().append("circle")
@@ -756,6 +782,7 @@ function draw_rosetemp(date, element, weather_loc) {
             .style("stroke", "black")
             .style("stroke-width", "1")
 
+        // Draw rose's arrow
         svg.selectAll("polygon_rose")
             .data(weather)
           .enter().append("polygon")
@@ -772,7 +799,7 @@ function draw_rosetemp(date, element, weather_loc) {
             .attr("fill", "none")
             .attr("stroke", "black")
             .attr("stroke-width", 1)
-            .attr("transform", "rotate("+corrected_north+
+            .attr("transform", "rotate("+weather[0].wind_direct+
                   ","+start.x+","+start.y+")")
     });
 } 

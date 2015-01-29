@@ -9,6 +9,7 @@ student number: 10887679
   <head>
     <meta charset="utf-8"/>
     <title>Bosbaan Rowing Visualization</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
     <!-- Main/SVG stylesheet -->
@@ -33,27 +34,28 @@ student number: 10887679
     <p> <img src="img/bosbaan3.jpg" alt="Bosbaan (c) T.E. Schouten"/> </p>
 
     <!-- Introduction -->
-    <p>One of the things a rower always wants to know: how fast am I? In rowing it is quite hard to compare results. Even if you win, how do you know if your crew has been very fast- or the opponents rather slow? How do you compare a lightweight single to a heavy eight? And what if a regatta has obviously been influenced by the weather?</p>
-    <p>This article is about answering some of these questions through visualizations. The data used to draw these graphs is freely available on <a href="https://time-team.nl/informatie/uitslagen" target="blank">Time Team.</a>I will exclusively be using 2000m regattas on The Bosbaan - Amsterdam.</p>
-    <p>For those who do not have a basic knowledge about rowing, the collapsible sections will explain more. </p> 
+    <p>One of the things a rower always wants to know: how fast am I? In rowing it is quite hard to compare results. Even if you win, how do you know if your crew has been very fast- or the opponents rather slow? How do you compare a lightweight single to a heavyweight eight? And what if a regatta has obviously been influenced by the weather?</p>
+    <p>This article is about answering some of these questions through visualizations. The data used to draw these graphs is freely available on <a href="https://time-team.nl/informatie/uitslagen" target="blank">Time Team.</a> I will exclusively be using 2000m regattas on The Bosbaan - Amsterdam.</p>
+    <p>For those who do not have a basic knowledge about rowing, this collapsible sections will explain more. </p> 
 
     <!-- Introduction extra info button -->
     <input id="textAreaToggle" type="checkbox" />
     <div id="textarea">
-        <p>About Regattas, Fields, Heats, Boattypes etc.. </p>
-        <p>Regatta is the name of a tournament in rowing. Each of these regattas consist of many different categories in which crews can participate. Every race in a categorie is called a heat. There are many different regattas in The Netherlands. About 10-12 important regattas each year, and many other smaller ones. Most regattas are on a 2000m course- as this is the most important distance in rowing. During worldcups and olympics 2000m is the only distance.
+        <p>About Regattas, Fields, Heats, Boat types etc.. </p>
+        <p>Regatta is the name of a tournament in rowing. Each of these regattas consists of many different categories in which crews can participate. Every race in a category is called a heat. There are many different regattas in The Netherlands: about 10-12 important regattas each year, and many other smaller ones. Most regattas are on a 2000m course- as this is the most important distance in rowing. During world cups and Olympics 2000m is the only distance.
         </p>
-        <p>In the following graphs you will see many different codes. From N1x to DDev4-. What you need to know: these codes are Dutch abbreviations for the field a crew is in. The abbreviations consist of three parts:</p>
+        <p>In the following visualizations you'll notice many different codes like N1x or DDev4-. What you need to know: these codes are Dutch abbreviations for the field a crew is in. The abbreviations consist of three parts:</p>
          <ul>
           <li>Sex / Age: Men, Lightweight men, Women, Lightweight Women</li>
           <li>Category: Starter, Advanced etc. (though it uses other terms)</li>
-          <li>Boattype: Single, double, four, eight. These can be sculling (two oars for each person) or sweep (one oar each person). And with or without coxswain (+). A good visualization can be found <a target="blank" href="http://megunticookrowing.org/about/rowing-101">here</a>.</li>
+          <li>Boat type: Single, double, four, eight. These can be sculling (two oars for each person) or sweep (one oar each person). With (+) or without coxswain. A good visualization can be found <a target="blank" href="http://megunticookrowing.org/about/rowing-101">here</a>.</li>
         </ul> 
         <p>
         Examples:<br> A lightweight (L) starter (B) rowing a single (1x): LB1x 
                  <br> Four women (D) rowing a double four (4*) in an "advanced" (O) field: DO4*.
                  <br> Eight men (-) rowing an eight(8+) in the top (SA) heavyweight class: SA8+. 
         </p>
+        <p>Other codes (like: ORC, OKE, NER, SKO, TRI, WIL etc.) are abbreviations for rowing clubs.</p>
     </div>
     <label for="textAreaToggle"></label>
 
@@ -74,7 +76,7 @@ student number: 10887679
     
     <!-- Regatta Scores header and text -->
     <div class="paragraph_header">Regatta Scores</div>
-    <p>Rowing results differ greatly as races are influenced by various factors. Fair comparison between seasons/years, regattas, races and/or people is very hard. In addition, comparing a lightweight novice to an experienced heavyweight would not make any sense, just like comparing a windy winter regatta to and end-of-season summer regatta. Still, by calculating some correction factors it might be possible to (somehow) compare the data.</p>
+    <p>Rowing results differ greatly as races are influenced by various factors. Fair comparison between seasons/years, regattas, races and/or people is very hard. In addition, comparing a lightweight novice to an experienced heavyweight would not make any sense, just like comparing a windy winter regatta to an end-of-season summer regatta. Still, by calculating some correction factors it might be possible to (somehow) compare the data. This visualizations tries to achieve this.</p>
 
     <!-- Regatta Scores dropdown menu -->
     <div id="regatta_graph_selector">
@@ -85,13 +87,15 @@ student number: 10887679
     <div class="container" id="regatta_overview"></div>
     
     <!-- Regatta Scores .. more text -->
-    <p>How does the graph work? The scores (0%-100%) are based on the quickest times in the dataset. The averages are based on the finals. </p>
+    <p>Scores (0%-100%) are based on the fastest times in the dataset. Example: if the fastest mens eight  would row 2000m in 6min it would mean an average speed of 20kmph. If another mens eight did it in 6m20 that would mean an average speed of 18.95kmph. This results in a score of 94.7%.</p>
+    <p>The vertical lines represent the averages, one of the regatta day, one of the entire regatta.</p>
     
     <!-- Lane Advantage header and text -->
     <div class="paragraph_header">Lane Advantage</div>
-    <p>Before viewing this graph, it is important to know how the race drawing procedure works. From all sign-ups, a random draw decides which crew starts in which lane. In case there are more crews than lanes (often the case), pre-finals will be rowed.  From the pre-finals, the six quickest teams are promoted to the A-Final. In this final, the quickest crews from the heats are lined up in the middle. All slower crews around the middle. [Example: 6 crews make it to the final, lane [2] to [7] are in use. The quickest crew is ligned up in one of the the middle lanes: [4] or [5]. The other crews are aligned based on their times in the heats. The sides lanes thus sporting the slowest crews.]</p>
+    <p>Before viewing this visualization, it is important to know how the race drawing procedure works. From all sign-ups, a random draw decides which crew starts in which lane. In case there are more crews than lanes (often the case), pre-finals will be organized. From the pre-finals, the six quickest teams will promote to the A-Final. In this final, the quickest teams from are lined up in the middle. All slower crews around their lanes.</p>
+    <p>Example: 6 crews make it to the final, lane [2] to [7] are in use. The quickest crew is lined-up in one of the the middle lanes: [4] or [5]. The other crews are aligned based on their times in the heats. The sides lanes thus sporting the slowest crews.]</p>
     <p>Due to wind conditions, races might not always be as fair as they seem. In general, the quickest crew in the pre-finals has a right to start in the quickest lane. Often, regatta organisation members tend to ignore lane advantage, although it does not exist. Probably because it would involve a lot of hassle and a re-draw.</p>
-    <p>The following graph attempts to show lane advantage in different regattas. The bigger the dot, the better a crew rowed. Weather data is based on daily averages at Schiphol and will slighty differ from the actual weather. </p>
+    <p>The following graph attempts to show lane advantage in different regattas. The bigger the dot, the better a crew scored. Weather data is based on daily averages at Schiphol and will slightly differ from the actual weather. "De Bosbaan" is positioned WSW (start) to ENE (finish), as seen on the map below.</p>
 
     <!-- Lane Advantage header and text -->
     <div id="mapcontainer">
@@ -103,6 +107,10 @@ student number: 10887679
     <!-- Lane Advantage dropdown menu -->
     <div id="laneadv_graph_selector">
         <select id="laneadv_graph_regatta"></select>
+        &nbsp;
+        <img class="legend_img" src="img/bluecirc.png"/> Heat
+        &nbsp; 
+        <img class="legend_img"src="img/greencirc.png"/> Final
     </div>
 
     <!-- Lane Advantage Viz containers -->
@@ -110,7 +118,7 @@ student number: 10887679
     <div class="container" id="laneadv"></div>
 
     <!-- Lane Advantage more text -->
-    <p>How to intepret this graph? The messier the better. In case you start seeing patterns (Like, one side of the lanes always scoring better than the other lane) : the races probably were not that fair.</p>
+    <p>Patterns can be seen by looking at the distribution of the the bigger and smaller dots. - which is good. It means there are no obvious advantages. Some regattas (fe. Hollandia 2013) clearly show some side lanes winning all the heats.</p>
 
     <!-- "Discuss" header & text -->
     <div class="paragraph_header">Discuss</div>

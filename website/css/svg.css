@@ -33,7 +33,7 @@
   stroke: #78B61C;
 }
 
-.dot_laneadv {
+.dot_heat {
   fill: #0B486B;
   stroke-width: 0.5px;
   stroke-location: inside;
@@ -41,10 +41,24 @@
   opacity: 1;
 }
 
-.dot_laneadv:hover {
+.dot_heat:hover {
   fill: #FF4500;
   opacity: 1;
 }
+
+.dot_final {
+  fill: #1b9e77;
+  stroke-width: 0.5px;
+  stroke-location: inside;
+  stroke: white;
+  opacity: 1;
+}
+
+.dot_final:hover {
+  fill: #FF4500;
+  opacity: 1;
+}
+
 
 .rect_laneadv {
   fill: white;
