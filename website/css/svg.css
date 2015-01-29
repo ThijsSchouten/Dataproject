@@ -70,6 +70,10 @@
   display: none;
 }
 
+.crew_code {
+  font: 10px "OpenSansBold";
+}
+
 .g_title {
   font: 13px "OpenSans";
 }

@@ -193,6 +193,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
                 .style("text-anchor", "end")
                 .text(function() {if (iter < 1) { return "Lane"}}); 
 
+            // only add the y-axis on first viz
             if (iter < 1) {
                 svg.append("g")
                     .attr("class", "y axis")
@@ -215,6 +216,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
 
             var tip = d3.select("#tooltip") 
 
+            // add the bars
             svg.selectAll(".bar")
                 .data(dataset)
               .enter().append("rect")
@@ -229,13 +231,23 @@ function heat_graph(json_file_loc, element, fieldlist) {
                         .duration(100)      
                         .style("opacity", 1)
                         .style("background", "rgba(0,0,0,0.8)");      
-                    tip.html("Lane ["+ d.lane + "]&nbsp&nbsp|&nbsp&nbsp" + formatMinutes(d.times)+"<hr>" + people)     
+                    tip.html("Time: " + formatMinutes(d.times)+"<hr>" + people)     
                     }) 
                 .on("mouseout", function(d) {     
                         tip.transition()        
                             .duration(500)      
                             .style("opacity", 0);   
                     });
+
+            // crew names
+            svg.selectAll("crew_code")
+                .data(dataset)
+              .enter().append("text")
+                .attr("class", "crew_code")
+                .attr("x", function(d,i) {return x(dataset[i].lane) + 9; })             
+                .attr("y", function(d,i) {return y(dataset[i].times) - 2; })
+                .attr("text-anchor", "middle")
+                .text( function(d,i) {return dataset[i].crew })
         }
     });
 }
