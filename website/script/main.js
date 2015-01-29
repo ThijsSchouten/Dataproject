@@ -1070,6 +1070,24 @@ function reset_heat_selection() {
     }
 }
 
+function speed_percentage(time, field_id) {
+    /*
+     Takes the quickest time from QUICKEST_TIMES[boattype]
+     Calculates speed from this time (based on 2000m)
+     Returns a races score in % vs the highscore
+    */
+    var best = 1 / QUICKEST_TIMES[field_id],
+        current = 1 / time,
+        percentage = (current / best)
+
+    if (isNaN(percentage) === true) {
+        console.log(field_id, "error, no time or no best_time found")
+        return 0.5
+    }
+
+    return percentage
+}
+
 // ------------------ Others
   
 /*   Pre-calculated data. Could be done real-time as well but:
@@ -1110,22 +1128,44 @@ function get_json_list(json_file_loc) {
 
         return json_dictionary
     });
-}
+}   
 
-function speed_percentage(time, field_id) {
+function get_quickest_times(json_file_loc) {
     /*
-     Takes the quickest time from QUICKEST_TIMES[boattype]
-     Calculates speed from this time (based on 2000m)
-     Returns a races score in % vs the highscore
+     Create a JSON object for console.log in firefox -
+     Run only when JSON data is updated. - manually save in QUICKEST_TIMES
+     @json_file_loc: Location of the json file on disk
     */
-    var best = 1 / QUICKEST_TIMES[field_id],
-        current = 1 / time,
-        percentage = (current / best)
 
-    if (isNaN(percentage) === true) {
-        console.log(field_id, "error, no time or no best_time found")
-        return 0.5
+    var records = {}
+
+    for (var i in json_file_loc) {
+
+        d3.json(json_file_loc[i], function(error, json) {
+            if (error) return console.warn("error loading json");
+
+            // for every field
+            for (var i in json.fields) {
+                // save the heattype
+                var heattype = json.fields[i].id
+
+                for (var j in json.fields[i].participants) {
+                    //console.log(json.fields[i].participants[j])
+                    var time = json.fields[i].participants[j].twenty_time
+                    if (records[heattype] === undefined) {
+                        records[heattype] = time
+                    } else if (time < records[heattype]) {
+                        console.log("update", heattype)
+                        records[heattype] = time
+                    } else {
+                        console.log("no new record")
+                    }
+                }
+            } 
+
+        console.log(records.toSource())
+
+        // or return records
+        });
     }
-
-    return percentage
 }
