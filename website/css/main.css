@@ -70,19 +70,19 @@ a:hover {
 }
 
 #heat_graph {
-  height: 300px;
+  min-height: 300px;
 }
 
 #regatta_overview {
-  height: 660px;
+  min-height: 660px;
 }
 
 #laneadv {
-  height: 1400px;
+  min-height: 1400px;
 }
 
 #laneadvinfo {
-  height: 100px;
+  min-height: 100px;
 }
 
 #header1 {

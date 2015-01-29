@@ -128,8 +128,6 @@ function heat_graph(json_file_loc, element, fieldlist) {
                 field = fieldlist[iter][1];
             
             // for every field, save the index 
-
-
             for (var i in json.heats) {
                 if (json.heats[i]._regtitle === regatta && json.heats[i]._id === field) {
                     heat_num.push(i)
@@ -154,9 +152,8 @@ function heat_graph(json_file_loc, element, fieldlist) {
                 }
             }
 
-
             var margin = {top: 45, right: 10, bottom: 40, left: 50},
-            width = 200 - margin.left - margin.right,
+            width = 230 - margin.left - margin.right,
             height = 300 - margin.top - margin.bottom;
 
             var x = d3.scale.ordinal()
@@ -185,7 +182,6 @@ function heat_graph(json_file_loc, element, fieldlist) {
                           margin.top + ")");
 
             y.domain(ydomain)
-
 
             svg.append("g")
                 .attr("class", "x axis")
