@@ -1,11 +1,4 @@
-html {
-  /*background-image: url("../img/pattern.jpg");*/
-  background-repeat: repeat;
-  background-position: center;
-}
-
 body {
-  background-color: white;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -19,13 +12,30 @@ body {
 }
 
 p {
-  font-family: "OpenSans", arial;
+  font-family: inherit;
   line-height: 125%;
   color: #191919;
   font-size: 13px;
   padding-top: 8px;
   padding-bottom: 5px;
   text-align: justify;
+}
+
+ul {
+  font-family: inherit;
+  line-height: 125%;
+  color: #191919;
+  font-size: 13px;
+  padding: inherit;
+  text-align: justify;
+}
+
+li {
+  padding-left: 5px;
+}
+
+li:before {
+  content: "• ";
 }
 
 a {
@@ -37,29 +47,17 @@ a {
   text-align: justify;
 }
 
-/* unvisited link */
 a:link {
   text-decoration: none;
   color: #3F3F3F;
 }
 
-/* mouse over link */
 a:hover {
   color: #78B61C;
 }
 
-ul {
-  font-family: "OpenSans", arial;
-  line-height: 125%;
-  color: #191919;
-  font-size: 13px;
-  padding: inherit;
-  text-align: justify;
-  list-style-type: circle;
-}
-
 .paragraph_header {
-  font-family: "OpenSans", arial;
+  font-family: inherit;
   color: #191919;
   font-size: 17px;
   padding-top: 15px;
@@ -71,53 +69,29 @@ ul {
   padding-left: 6px;
 }
 
-/* Thanks to David Thomas on StackOverflow 
-
-
-*/
-
-#textarea {
-  display: none;
-  background: #f8f8f8;
-  border-left: 3px solid #78B61C;
-  padding: 0.5em;
+#heat_graph {
+  height: 300px;
 }
 
-#textAreaToggle:checked + #textarea {
-    display: block;
+#regatta_overview {
+  height: 660px;
 }
 
-input[type="checkbox"] {
-  position: absolute;
-  left: -1000px;
-}
-label {
-  font-family: "OpenSans", arial;
-  line-height: 125%;
-  color: #191919;
-  font-size: 13px;
-  padding-top: 8px;
-  padding-bottom: 5px;
-  text-align: justify;
-  display: block;
+#laneadv {
+  height: 1400px;
 }
 
-#textAreaToggle + #textarea + label::before {
-    content: '▼ MORE';
+#laneadvinfo {
+  height: 100px;
 }
-
-#textAreaToggle:checked ~ #textarea + label::before {
-    content: '▲ LESS';
-}
-
 
 #header1 {
   font-family: "Merri";
   color: #1a1c22;
-  font-size: 50px;
+  font-size: 49px;
   padding-bottom: 8px;
   padding-top: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 #sub_header {
@@ -125,7 +99,7 @@ label {
   color: #242730;
   font-size: 21px;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 #tooltip {  
@@ -161,20 +135,58 @@ label {
 #footer {
   font-family: "OpenSansBold", arial;
   color: #000;
-  font-size: 11px;
+  font-size: 13px;
   padding-top: 15px;
   padding-bottom: 5px;
   text-align: center;
-  border-top: 1px double;
+  border-top: 1px solid grey;
 }
 
 #mapcontainer {
   padding-top: 6px;
   padding-bottom: 12px;
-
 }
 
 #map {
   width: 700px;
   height: 165px;
 }
+
+
+/* Thanks to David Thomas on StackOverflow */
+
+#textarea {
+  display: none;
+  background: #f8f8f8;
+  border-left: 3px solid #78B61C;
+  padding: 0.5em;
+}
+
+#textAreaToggle:checked + #textarea {
+    display: block;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -1000px;
+}
+label {
+  font-family: "OpenSans", arial;
+  line-height: 125%;
+  color: #191919;
+  font-size: 13px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  text-align: justify;
+  display: block;
+}
+
+#textAreaToggle + #textarea + label::before {
+    content: '▼ more';
+}
+
+#textAreaToggle:checked ~ #textarea + label::before {
+    content: '▲ less';
+}
+
+/* -- */

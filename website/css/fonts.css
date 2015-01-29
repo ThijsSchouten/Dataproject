@@ -9,37 +9,6 @@
 }
 
 @font-face {
-   font-family: OpenSansLight;
-   src: url(../font/OpenSans-Light.ttf);
-}
-
-@font-face {
-   font-family: OpenSansSemibold;
-   src: url(../font/OpenSans-Semibold.ttf);
-}
-
-@font-face {
    font-family: OpenSansBold;
    src: url(../font/OpenSans-Bold.ttf);
 }
-
-@font-face {
-   font-family: Lato;
-   src: url(../font/Lato-Regular.ttf);
-}
-
-@font-face {
-   font-family: LatoHairline;
-   src: url(../font/Lato-Hairline.ttf);
-}
-
-@font-face {
-   font-family: LatoLightItalic;
-   src: url(../font/Lato-LightItalic.ttf);
-}
-
-@font-face {
-   font-family: BigJohn;
-   src: url(../font/SlimJoe.otf);
-}
-
