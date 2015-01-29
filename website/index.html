@@ -1,116 +1,130 @@
 <!DOCTYPE html>
-<!-- saved from url=(0039)http://getbootstrap.com/examples/blog/# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="icon" href="http://getbootstrap.com/favicon.ico"> -->
 
-    <title>Dutch Rowing Regatta Exploration Tool</title>
+<!--
+name: Thijs Schouten
+student number: 10887679
+-->
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Titel komt hier</title>
+    <!--<link rel='shortcut icon' type='image/x-icon' href='img/plus32.png' />-->
+    <!-- RESET & fonts -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+    <!-- Main/SVG stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/svg.css"/>
+    <!-- Local d3 library, tip library, maps -->
+    <script src="js/d3/d3.min.js"></script>
+    <script src="js/jquery/jquery-2.0.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./index_files/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
-.en-markup-crop-options {
-    top: 18px !important;
-    left: 50% !important;
-    margin-left: -100px !important;
-    width: 200px !important;
-    border: 2px rgba(255,255,255,.38) solid !important;
-    border-radius: 4px !important;
-}
-
-.en-markup-crop-options div div:first-of-type {
-    margin-left: 0px !important;
-}
-</style></head>
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+  </head>
 
   <body>
+    <div id="tooltip"></div>
+    <div id="header1">Bosbaan Rowing Viz</div>
+    <div id="sub_header">Exploring Amsterdams rowing course data.</div>
+    
+    <p>
+    <img src="img/bosbaan3.jpg" alt="Bosbaan (c) T.E. Schouten"/>
+    </p>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="index.html">Home</a>
-          <a class="blog-nav-item" href="index.html">Subjects</a>
-          <a class="blog-nav-item" href="index.html">About</a>
-          <a class="blog-nav-item" href="index.html">Contact </a>
-        </nav>
-      </div>
+    <p>One of the things a rower always wants to know: how fast am I? In rowing it is quite hard to compare results. Even if you win, how do you know if your crew has been very fast- or the opponents rather slow? How do you compare a lightweight single to a heavy eight? And what if a regatta has obviously been influenced by the weather?</p>
+    <p>This article is about answering some of these questions through visualizations. The data used to draw these graphs is freely available on <a href="https://time-team.nl/informatie/uitslagen" target="blank">Time Team.</a> I will exclusively be using 2000m regattas on The Bosbaan - Amsterdam.</p>
+    <p>For those who do not have a basic knowledge about rowing, the collapsible sections will explain more. </p> 
+
+    <input id="textAreaToggle" type="checkbox" />
+    <div id="textarea">
+        <p>About Regattas, Fields, Heats, Boattypes etc.. </p>
+        <p>Regatta is the name of a tournament in rowing. Each of these regattas consist of many different categories in which crews can participate. Every race in a categorie is called a heat. There are many different regattas in The Netherlands. About 10-12 important regattas each year, and many other smaller ones. Most regattas are on a 2000m course- as this is the most important distance in rowing. During worldcups and olympics 2000m is the only distance.
+        </p>
+        <p>In the following graphs you will see many different codes. From N1x to DDev4-. What you need to know: these codes are Dutch abbreviations for the field a crew is in. The abbreviations consist of three parts:</p>
+         <ul>
+          <li>Sex / Age: Men, Lightweight men, Women, Lightweight Women</li>
+          <li>Category: Starter, Advanced etc. (though it uses other terms)</li>
+          <li>Boattype: Single, double, four, eight. These can be sculling (two oars for each person) or sweep (one oar each person). And with or without coxswain (+). A good visualization can be found <a target="blank" href="http://megunticookrowing.org/about/rowing-101">here</a>.</li>
+        </ul> 
+        <p>
+        Examples:<br> A lightweight (L) starter (B) rowing a single (1x): LB1x 
+                 <br> Four women (D) rowing a double four (4*) in an "advanced" (O) field: DO4*.
+                 <br> Eight men (-) rowing an eight(8+) in the top (SA) heavyweight class: SA8+. 
+        </p>
+
+
+    </div>
+    <label for="textAreaToggle"></label>
+
+    <div class="paragraph_header">Heat Comparison</div>
+    <p>So- what if you <em>do</em> wonder about the absolute differences between fields? This chart allows you to compare them. Hover over the bars to see more details about every crew.</p>
+
+    <div id="heat_graph_selector">
+        <select id="heat_graph_regatta"></select>
+        <select id="heat_graph_field"></select>
+        <button type="button" class="heat_graph_reset">Add</button>
     </div>
 
-    <div class="container">
+    <div class="container" id="heat_graph"></div>
 
-      <div class="blog-header">
-        <h1 class="blog-title">Title here</h1>
-        <p class="lead blog-description">Exploring Dutch rowing regatta data.</p>
-      </div>
+    <input id="textAreaToggle" type="checkbox" />
+    <div id="textarea">
+        <p>On regattas, fields, heats, boattypes</p>
+        <p></p>
+    </div>
+    <label for="textAreaToggle"></label>
+    
 
-      <div class="row">
+    <div class="paragraph_header">Regatta Scores</div>
+    <p>Rowing results differ greatly as races are influenced by various factors. Fair comparison between seasons/years, regattas, races and/or people is very hard. In addition, comparing a lightweight novice to an experienced heavyweight would not make any sense, just like comparing a windy winter regatta to and end-of-season summer regatta. Still, by calculating some correction factors it might be possible to (somehow) compare the data.</p>
 
-        <div class="col-sm-8 blog-main">
+    <div id="regatta_graph_selector">
+        <select id="regatta_graph_regatta"></select>
+        <button type="button" class="heat_graph_reset">Add</button>
+    </div>
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">Intro</h2>
+    <div class="container" id="regatta_overview"></div>
+    
+    <p>How does the graph work? The scores (0%-100%) are based on the quickest times in the dataset. The averages are based on the finals. </p>
+    
+    <div class="paragraph_header">Lane Advantage</div>
+    <p>Before viewing this graph, it is important to know how the race drawing procedure works. From all sign-ups, a random draw decides which crew starts in which lane. In case there are more crews than lanes (often the case), pre-finals will be rowed.  From the pre-finals, the six quickest teams are promoted to the A-Final. In this final, the quickest crews from the heats are lined up in the middle. All slower crews around the middle. [Example: 6 crews make it to the final, lane [2] to [7] are in use. The quickest crew is ligned up in one of the the middle lanes: [4] or [5]. The other crews are aligned based on their times in the heats. The sides lanes thus sporting the slowest crews.]</p>
+    <p>Due to wind conditions, races might not always be as fair as they seem. In general, the quickest crew in the pre-finals has a right to start in the quickest lane. Often, regatta organisation members tend to ignore lane advantage, although it does not exist. Probably because it would involve a lot of hassle and a re-draw.</p>
+    <p>The following graph attempts to show lane advantage in different regattas. The bigger the dot, the better a crew rowed. Weather data is based on daily averages at Schiphol and will slighty differ from the actual weather. </p>
 
-            <!-- 
-            <p>As one of many students I decided to pick up rowing in college. The plan: make friends, get fit in a year and quit. Honestly, I failed miserably. Now, four years later, I still row. Daily.</p>
-            <p>Hier komt vanalles.. We call it 'De grote reken-je-rijk show'. Which means something like 'The Big</p>
-            <p>Rowing results differ greatly as races are influenced by many (mainly weather) factors. To be able to compare races at an Olympic level, it is a common practise to judge results on their percentage compared to the world’s best time (WBT). In this case we'll be comparing results to the fastest time in the database, the field's best time (or FBT). </p>
-            <p>As a rower there are a few things I would like to know:
+    <div id="mapcontainer">
+        <div id="map">
+        <p><br><br><br> Could not load Bosbaan Map:<br>An internet connection is required to load Google Maps <p>
+        </div>
+    </div>
 
-            </p>
-            -->
+    <div id="laneadv_graph_selector">
+        <select id="laneadv_graph_regatta"></select>
+    </div>
 
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+    <div class="container" id="laneadvinfo"></div>
+    <div class="container" id="laneadv"></div>
 
+    <p>How to intepret this graph? The messier the better. In case you start seeing patterns (Like, one side of the lanes always scoring better than the other lane) : the races probably were not that fair.</p>
 
-        </div><!-- /.blog-main -->
-        <div class="blog-post">
-          <h2 class="blog-post-title">Data</h2>
-          <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-          </p>
+    <div class="paragraph_header">Discuss</div>
+    <p>Regatta Scores Chart: [niet alle highscores zijn even 'hoog', omdat sommige boattypes "in" raken. Daar door misschien vertekend beeld.]</p>
+    <p>Lane Advantage Chart: Although the lane advantage graph shows average wind factors, these are not the only important factors. Current, water- and air temperature are important as well.. Luckily the air and water temperature are equal for all crews. The water current is harder to measure as these are influenced by wind conditions days before as well. </p>
 
-        </div><!-- /.blog-main -->
-
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>(c) T.E. Schouten. Credits: modified <a href="http://getbootstrap.com/">bootstrap</a> template, original  by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-
-    </footer>
+    <div class="paragraph_header">Credits</div>
+    <p>Website created as part of <a target="blank" href="http://www.mprog.nl/">MPROG</a> final project. Written in HTML, CSS, Javascript. Data manipulations in JS using: <a target="blank" href="https://github.com/ThijsSchouten/Dataproject">d3js.org</a> and a tiny bit of <a target="blank" href="http://jquery.com/">jQuery</a>. Map by Google, theme by  <a target="blank" href="https://snazzymaps.com/style/47/nature">Tanja Lederer</a>.</p>
+    
+    <p>Thanks to <a target="blank" href="https://time-team.nl/informatie/uitslagen">TimeTeam</a> for publishing regatta data. Weather data from <a target="blank" href="http://www.knmi.nl/klimatologie/daggegevens/download.html">KNMI</a>. </p>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./index_files/jquery.min.js"></script>
-    <script src="./index_files/bootstrap.min.js"></script>
-    <script src="./index_files/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./index_files/ie10-viewport-bug-workaround.js"></script>
-  
+    <br>
+    <div id="footer">
+        <a target="blank" href="https://github.com/ThijsSchouten/Dataproject">Git Repo</a>&emsp;
+        <a target="blank" href="http://nl.linkedin.com/pub/thijs-schouten/25/9b6/188">&copy; T.E. Schouten</a>
+    </div>
 
-<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" title="" data-original-title="Copy to clipboard">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1420809676357">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1420809676357" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit">                </object></div></body></html>
+  </body>
+</html>
