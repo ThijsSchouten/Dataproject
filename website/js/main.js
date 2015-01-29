@@ -6,52 +6,26 @@ var weather_loc = "csv/schiphol_weatherdata.csv"
 var POP_DICTIONARY = ({'NSRF 2014':["SA1x", "SA2+", "SA2-", "SA2x", "SA4-", "SA4x", "SA8+", "O1x", "O2-", "O4+", "O4-", "N1x", "N2+", "N2-", "N2x", "N4+", "N4-", "B1x", "B4+", "B8+", "LSA1x", "LSA2+", "LSA2-", "LSA4-", "LSA8+", "LO1x", "LO2-", "LO4+", "LO4-", "LN1x", "LN2+", "LN2-", "LN2x", "LN4+", "LN4-", "LB1x", "LB8+", "DSA1x", "DSA2+", "DSA2-", "DSA2x", "DSA4-", "DSA4x", "DSA8+", "DO1x", "DO2-", "DO4+", "DN1x", "DN2-", "DN2x", "DN4+", "DN4-", "DB1x", "DB4+", "DB8+", "LDSA1x", "LDO1x", "LDN1x", "LDN2x", "LDB1x", "Ej8+", "Dev4-", "LEj8+", "LDev4-", "DEj8+", "DDev4-", "LDEj4x", "LDDev2x"], 'HOLLANDIA 2014':["SA1x", "SA2-", "SA2x", "SA4-", "SA8+", "O2-", "O4+", "O4-", "N1x", "N2-", "N2x", "N4+", "N4-", "B1x", "B4+", "B8+", "LSA1x", "LSA8+", "LO2-", "LO4-", "LN1x", "LN2-", "LN2x", "LN4+", "LN4-", "LB1x", "LB4+", "LB8+", "DSA1x", "DSA2-", "DSA2x", "DSA4-", "DSA4x", "DSA8+", "DO2-", "DN1x", "DN2-", "DN2x", "DN4+", "DN4-", "DB1x", "DB4+", "DB8+", "LDSA1x", "LDN1x", "LDN2x", "LDB1x", "O1x", "Ej8+", "Dev4-", "LEj8+", "LDev4-", "DEj8+", "DDev4-", "LDEj2x", "LDEj4x", "LDDev2x"], 'HOLLANDIA 2013':["O2-", "N1x", "N2-", "N4+", "N4-", "B1x", "B4+", "B8+", "LO2-", "LO4-", "LN1x", "LN4+", "LB1x", "LB4+", "LB8+", "DN1x", "DN4-", "DB8+", "LDSA1x", "LDN1x", "LDN2x", "LDB1x", "Ej8+", "Dev4-", "LEj8+", "LDev4-", "DEj8+", "DDev4-", "LDDev2x", "SA1x", "SA2-", "LSA1x", "DSA1x", "DSA2-"]})
 var QUICKEST_TIMES = ({SA1x:[421.48], 'SA2+':[438.49], 'SA2-':[387.67], SA2x:[394.23], 'SA4-':[359.74], SA4x:[352.94], 'SA8+':[342.15], O1x:[430.38], 'O2-':[408.48], 'O4+':[401.3], 'O4-':[378.06], N1x:[434.1], 'N2+':[457.37], 'N2-':[411.07], N2x:[421.58], 'N4+':[399.55], 'N4-':[386.48], B1x:[434.36], 'B4+':[403.83], 'B8+':[354.85], LSA1x:[422.78], 'LSA2+':[455.9], 'LSA2-':[417.35], 'LSA4-':[365.97], 'LSA8+':[360.06], LO1x:[436.57], 'LO2-':[408.01], 'LO4+':[420.12], 'LO4-':[369.35], LN1x:[444.01], 'LN2+':[466.16], 'LN2-':[426.34], LN2x:[414.08], 'LN4+':[422], 'LN4-':[393.98], LB1x:[453.77], 'LB8+':[371.99], DSA1x:[458.46], 'DSA2+':[511.52], 'DSA2-':[437.64], DSA2x:[442.34], 'DSA4-':[411.91], DSA4x:[379.12], 'DSA8+':[373.17], DO1x:[479.86], 'DO2-':[450.59], 'DO4+':[442.69], DN1x:[485.07], 'DN2-':[466.95], DN2x:[464], 'DN4+':[450.32], 'DN4-':[429.88], DB1x:[491.54], 'DB4+':[464.6], 'DB8+':[400.7], LDSA1x:[463.29], LDO1x:[498.32], LDN1x:[492.68], LDN2x:[474.33], LDB1x:[520.1], 'Ej8+':[350.81], 'Dev4-':[373.21], 'LEj8+':[361.28], 'LDev4-':[378.37], 'DEj8+':[397.61], 'DDev4-':[412.43], 'LDEj4x':[443.73], LDDev2x:[451.36], J181x:[436.66], J182x:[407.25], J184x:[365.37], 'J188+':[361.13], J161x:[457.86], J162x:[427.04], 'J164*':[431.29], J164x:[398.19], 'J168+':[387.05], M181x:[496.36], 'M182-':[492.41], M182x:[460.62], M184x:[432.54], Meisjesacht:"no_data", M161x:[511.75], M162x:[472.56], 'M164*':[481.1], M164x:[447.86], 'M168+':[436.77], 'HTal8+':[388.78], 'DTal8+':[441.55], LDEj2x:[480.18], 'LB4+':[430.58], 'DO4-':[441.03], 'M188+':[449.74], 'J182-':[491.39], no_data1x:[644.73]})
 
-get_json_list(file_loc)
-
-function get_json_list(json_file_loc) {
-
-    d3.json(json_file_loc, function(error, json) {
-        if (error) return console.warn("error loading json");
-
-        var json_dictionary = {}
-        var regattas = []
-
-        // get the different regattas from json and add regatta key
-        for (var i in json.heats) {
-            if (regattas.indexOf(json.heats[i]._regtitle) === -1) {
-                regattas.push(json.heats[i]._regtitle)
-                json_dictionary[json.heats[i]._regtitle] = []
-            }
-        }
-        // create a list of fields in this regatta
-        for (var i in json.heats) {
-            if (json_dictionary[json.heats[i]._regtitle].indexOf(json.heats[i]._id) === -1) {
-                json_dictionary[json.heats[i]._regtitle].push(json.heats[i]._id)
-            }
-        }
-
-        console.log("If error: Try this in FireFox.. :) ")
-        //console.log(json_dictionary.toSource())
-
-        return json_dictionary
-    });
-}
 
 window.onload = function() {    
-
+    // populate the dropdown menus
     pop_regatta_dropdown("heat_graph_regatta", POP_DICTIONARY)
     pop_regatta_dropdown("laneadv_graph_regatta", POP_DICTIONARY)
     pop_heat_dropdown("heat_graph_field", "NSRF 2014", POP_DICTIONARY)
     pop_regatta_dropdown("regatta_graph_regatta", POP_DICTIONARY)
 
+    // set event listeners for tooltip and graph selectors
     document.addEventListener("mousemove", get_mouse);
     document.getElementById("heat_graph_selector")
-        .addEventListener("change", update_heat_graph);
+        .addEventListener("change", update_heat_graph)
+    document.getElementById("heat_graph_regatta")
+        .addEventListener("change", update_heat_dropdown)
     document.getElementById("regatta_graph_selector")
         .addEventListener("change", update_regatta_graph);
     document.getElementById("laneadv_graph_selector")
         .addEventListener("change", update_laneadv_graph);
 
+    // draw the graphs
     update_heat_graph();
     update_regatta_graph();
     update_laneadv_graph();
@@ -60,13 +34,19 @@ window.onload = function() {
     google.maps.event.addDomListener(window, 'load', map_init("map"));
 }
 
+// A. Functions to update dropdown menus / graphs.
+function update_heat_dropdown() {
+    document.getElementById("heat_graph_field").innerHTML = ""
+    pop_heat_dropdown("heat_graph_field", document.getElementById("heat_graph_regatta").value, POP_DICTIONARY)
+}
+
 function update_laneadv_graph() {
     document.getElementById("laneadv").innerHTML = ""
     document.getElementById("laneadvinfo").innerHTML = ""
     var regatta = document.getElementById("laneadv_graph_regatta").value
 
-    draw_rosetemp(regatta_data(regatta, 0), "#laneadvinfo", weather_loc)
-    draw_rosetemp(regatta_data(regatta, 1), "#laneadvinfo", weather_loc)
+    draw_rosetemp(regatta_date(regatta, 0), "#laneadvinfo", weather_loc)
+    draw_rosetemp(regatta_date(regatta, 1), "#laneadvinfo", weather_loc)
     laneadv_graph(file_loc, "#laneadv", regatta)
 }
 
@@ -82,7 +62,9 @@ function update_heat_graph() {
     var field = document.getElementById("heat_graph_field").value
     heat_graph(file_loc, "#heat_graph", regatta, field)
 }
+// end A------ 
 
+// B. Graph drawing functions 
 function heat_graph(json_file_loc, element, regatta, field) {
 
     // Plotting the graph ---------------------------------------------
@@ -534,12 +516,10 @@ function laneadv_graph(json_file_loc, element, regatta) {
             }    
         }
 
-
-
         plot_dataset(dataset_sat),
         plot_dataset(dataset_sun)
 
-        function plot_dataset(dataset, dayname) {
+        function plot_dataset(dataset) {
 
             var svg = d3.select(element)
                   .append("svg")
@@ -578,6 +558,7 @@ function laneadv_graph(json_file_loc, element, regatta) {
                 .style("text-anchor", "end")
                 .text("Start Time");
 
+            // grey-white background on lanes
             svg.selectAll("rect_laneadv")
                 .data([0,1,2,3,4,5,6,7])                
               .enter().append("rect")
@@ -675,7 +656,7 @@ function draw_rosetemp(date, element, weather_loc) {
         var start = {x: 120, y: 75}
         // north points to 75, thus:
         var corrected_north = (weather[0].wind_direct)
-
+        
         svg.append("text")
             .attr("class", "g_rose")
             .attr("x", start.x)             
@@ -728,6 +709,8 @@ function draw_rosetemp(date, element, weather_loc) {
                   ","+start.x+","+start.y+")")
     });
 } 
+// end B----
+
 
 // Populates the dropdown menu for regattas
 function pop_regatta_dropdown(element, dictionary) {
@@ -803,8 +786,9 @@ function get_mouse(event) {
    .style("top", y + "px"); 
 }
 
-//
+// Takes a time string like "11:45" and returns datefile
 function minuteNumber(time_string) {
+    console.log(time_string)
     var hour = time_string.split(":")[0]
     var minute = time_string.split(":")[1]
 
@@ -963,7 +947,8 @@ function calc_avg(int_array) {
     return total/length
 }
 
-function regatta_data(regatta, i) {
+// Input: regatta, return regatta date
+function regatta_date(regatta, i) {
     var dates = {"NSRF 2014":["2014-07-05","2014-07-06"],
                  "NSRF 2013":[""],
                  "NSRF 2012":[""],
@@ -971,7 +956,36 @@ function regatta_data(regatta, i) {
                  "HOLLANDIA 2013":["2013-04-20","2013-04-21"],
                  "HOLLANDIA 2012":["2012-04-21","2012-04-22"]
                  }
-
-
     return dates[regatta][i]
+}
+
+// Create a JSON object for console.log in firefox -
+// Run only when JSON data is updated. 
+function get_json_list(json_file_loc) {
+
+    d3.json(json_file_loc, function(error, json) {
+        if (error) return console.warn("error loading json");
+
+        var json_dictionary = {}
+        var regattas = []
+
+        // get the different regattas from json and add regatta key
+        for (var i in json.heats) {
+            if (regattas.indexOf(json.heats[i]._regtitle) === -1) {
+                regattas.push(json.heats[i]._regtitle)
+                json_dictionary[json.heats[i]._regtitle] = []
+            }
+        }
+        // create a list of fields in this regatta
+        for (var i in json.heats) {
+            if (json_dictionary[json.heats[i]._regtitle].indexOf(json.heats[i]._id) === -1) {
+                json_dictionary[json.heats[i]._regtitle].push(json.heats[i]._id)
+            }
+        }
+
+        console.log("If error: Try this in FireFox.. :) ")
+        //console.log(json_dictionary.toSource())
+
+        return json_dictionary
+    });
 }
