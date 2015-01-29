@@ -1,5 +1,6 @@
 .bar {
   fill: #0B486B;
+  shape-rendering: crispEdges;
   opacity: 0.9;
 }
 
@@ -27,6 +28,7 @@
   stroke: #0B486B;
   stroke-width: 8px;
   stroke-linecap: round;
+  opacity: 0.9;
 }
 
 .path_overview:hover {

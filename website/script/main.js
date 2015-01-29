@@ -9,16 +9,16 @@ var HEAT_SELECTION = [];
 // ------------------ Main function on onload.
 
 window.onload = function() {    
-    // populate the dropdown menus
+    // Populate the dropdown menus
     pop_regatta_dropdown("heat_graph_regatta", POP_DICTIONARY)
     pop_regatta_dropdown("laneadv_graph_regatta", POP_DICTIONARY)
     pop_heat_dropdown("heat_graph_field", "NSRF 2014", POP_DICTIONARY)
     pop_regatta_dropdown("regatta_graph_regatta", POP_DICTIONARY)
 
-    // set event listeners for tooltip and graph selectors
+    // Set event listeners for tooltip and graph selectors
     document.addEventListener("mousemove", get_mouse);
 
-    // listeners for Heat Comparison menu & button
+    // Listeners for Heat Comparison menu & button
     document.getElementById("heat_graph_regatta")
         .addEventListener("change", update_heat_dropdown)
     document.getElementById("heat_graph_add")
@@ -28,18 +28,18 @@ window.onload = function() {
     document.getElementById("heat_graph_reset")
         .addEventListener("click", update_heat_graph)
 
-    // listeners for Regatta Scores and LaneAdvantage menus 
+    // Listeners for Regatta Scores and LaneAdvantage menus 
     document.getElementById("regatta_graph_selector")
         .addEventListener("change", update_regatta_graph);
     document.getElementById("laneadv_graph_selector")
         .addEventListener("change", update_laneadv_graph);
 
-    // draw the graphs
+    // Draw the graphs
     update_heat_graph();
     update_regatta_graph();
     update_laneadv_graph();
 
-    //init google maps map. Credits dev.google
+    //Init google maps map. Credits dev.google
     google.maps.event.addDomListener(window, 'load', map_init("map"));
 }
 
@@ -158,7 +158,7 @@ function heat_graph(json_file_loc, element, fieldlist) {
 
             // Set up vars for D3 
             var margin = {top: 45, right: 10, bottom: 40, left: 50},
-            width = 230 - margin.left - margin.right,
+            width = 225 - margin.left - margin.right,
             height = 300 - margin.top - margin.bottom;
 
             var x = d3.scale.ordinal()
